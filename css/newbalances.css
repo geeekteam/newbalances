@@ -1,0 +1,217 @@
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.main-banner {
+  position: relative;
+  background: url("../img/newbalances/main-banner.png") no-repeat;
+  background-size: cover;
+  height: 480px;
+  width: 100%;
+}
+
+.main-banner-flex {
+  display: flex;
+}
+
+.main-banner__title {
+  padding-top: 90px;
+  max-width: 515px;
+  margin-bottom: 45px;
+}
+
+b, strong {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.font-proxima-nova-bold {
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-weight: 700;
+}
+
+.icon-newbalance {
+  background: url("../img/newbalances/icon-sneaker.png") no-repeat;
+  background-size: 92px 42px;
+  width: 92px;
+  height: 42px;
+  display: block;
+  margin: 0 auto;
+}
+
+.main-banner__text-bottom {
+  text-align: center;
+  max-width: 310px;
+}
+
+.main-banner__exclamation {
+  position: relative;
+  max-width: 400px;
+  margin-left: 250px;
+  border: 1px solid #c2a062;
+  padding-left: 80px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  z-index: 20;
+}
+
+.main-banner__exclamation::after {
+  position: absolute;
+  content: '';
+  top: -50%;
+  left: 10%;
+  transform: translate(-10%, 50%);
+  background: url("../img/newbalances/exclamation.png") no-repeat;
+  background-size: 10px 37px;
+  width: 10px;
+  height: 37px;
+}
+
+.main-banner__sneaker {
+  position: absolute;
+  top: 20%;
+  left: 56%;
+  transform: translate(-56%, 0);
+  z-index: 10;
+}
+
+.main-banner__discount {
+  position: absolute;
+  top: 0;
+  right: 7%;
+  transform: translateX(-7%);
+  background: url("../img/newbalances/discount-bg.png") no-repeat;
+  width: 704px;
+  height: 480px;
+}
+
+.main-banner__discount-value,
+.main-banner__discount-percent {
+  color: #ffffff;
+  font-family: "Proxima Nova ExCn Rg", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.main-banner__discount-value {
+  font-size: 180px;
+}
+
+.main-banner__discount-percent {
+  font-size: 66px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.main-banner-discount-text-wrapper {
+  margin-top: 210px;
+  margin-left: 170px;
+}
+
+.main-banner-discount-flex {
+  margin-top: 100px;
+  margin-left: 200px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.main-banner-subdiscount-text {
+  margin-left: 130px;
+}
+
+.main-banner-only-for {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 20px;
+  width: 380px;
+}
+
+.button {
+  display: inline-flex;
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  padding: 15px 50px;
+  font-weight: bold;
+}
+
+.button:hover {
+  text-decoration: none;
+  color: #ffffff;
+  box-shadow: inset 0 0 100px rgba(0,0,0, 0.3);
+}
+
+.button_brown {
+  background-color: #c2a062;
+  color: #ffffff;
+}
+
+.triggers {
+  background-color: #e7e8ea;
+  padding: 20px;
+}
+
+.triggers-flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -20px;
+  margin-left: -20px;
+}
+
+.trigger-item {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.trigger-item__icon {
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.icon-trigger-official-distributor,
+.icon-trigger-guarantee,
+.icon-trigger-7-pairs,
+.icon-trigger-delivery {
+  width: 71px;
+  height: 64px;
+  background-size: 71px 64px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.icon-trigger-official-distributor {
+  background-image: url("../img/newbalances/trigger-official-distributor.png");
+}
+
+.icon-trigger-guarantee {
+  background-image: url("../img/newbalances/trigger-guarantee.png");
+}
+
+.icon-trigger-7-pairs {
+  background-image: url("../img/newbalances/trigger-7-pairs.png");
+}
+
+.icon-trigger-delivery {
+  background-image: url("../img/newbalances/trigger-delivery.png");
+}
+
+.trigger-item__text {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+  text-transform: uppercase;
+}

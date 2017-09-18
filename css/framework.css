@@ -1,0 +1,69 @@
+/*text properties*/
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-red {
+  color: #e11836;
+}
+
+/*end text properties*/
+
+
+/*------*/
+
+
+/*font properties*/
+
+.font-size-33 {
+  font-size: 33px;
+}
+
+.font-size-66 {
+  font-size: 66px;
+}
+
+.font-size-180 {
+  font-size: 180px;
+}
+
+.line-height-1 {
+  line-height: 1;
+}
+
+/*end font properties*/
+
+
+/*------*/
+
+
+/*margins and paddings*/
+.mt0 {
+  margin-top: 0;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.mb50 {
+  margin-bottom: 50px;
+}
+/*end margins and paddings*/

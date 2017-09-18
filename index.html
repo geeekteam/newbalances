@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <title></title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900,900i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="css/newbalances.css" type="text/css">
+  <link rel="stylesheet" href="css/fonts.css" type="text/css">
+  <link rel="stylesheet" href="css/framework.css" type="text/css">
+</head>
+
+<body>
+
+<div id="wrapper">
+
+  <div id="callModal" class="call-modal mfp-hide">
+    <div class="modal-contacts-form">
+      <span class="call-modal-tt">Обратный звонок</span>
+      <form action="#">
+        <div class="form-group">
+          <label for="inputName">Ваше имя</label>
+          <div class="icon-input">
+            <i class="icon icon-user-input"></i>
+            <input type="text" placeholder="ВАШЕ ИМЯ" id="inputName">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPhone">Ваш телефон</label>
+          <div class="icon-input">
+            <i class="icon icon-phone-input"></i>
+            <input type="text" placeholder="+7" id="inputPhone" class="mask-phone">
+          </div>
+        </div>
+        <button class="btn" type="submit">ОФОРМИТЬ ЗАКАЗ</button>
+      </form>
+    </div>
+  </div>
+
+
+  <div id="cartModal" class="cart-modal mfp-hide">
+    <div class="product-info-icons hidden-devices">
+      <div class="prod-icon-item">
+        <i class="icon icon-rouble"></i>
+        <span class="prod-icon-name">
+          <span>Оплата</span>
+          <span>после примерки</span>
+        </span>
+      </div>
+
+      <div class="prod-icon-item">
+        <i class="icon icon-sneakers"></i>
+        <span class="prod-icon-name">
+          <span>До 4-х пар</span>
+          <span>на выбор</span>
+        </span>
+      </div>
+
+      <div class="prod-icon-item">
+        <i class="icon icon-guarantee">
+          <span class="icon-g-value-md">60</span>
+        </i>
+        <span class="prod-icon-name">
+          <span>Гарантия</span>
+          <span>60 дней</span>
+        </span>
+      </div>
+
+      <div class="prod-icon-item">
+        <i class="icon icon-original-box"></i>
+        <span class="prod-icon-name">
+          <span>Оригинальные</span>
+          <span>кроссовки Nike</span>
+        </span>
+      </div>
+
+      <div class="prod-icon-item">
+        <i class="icon icon-guarantee">
+          <span class="icon-g-value-sm">365</span>
+        </i>
+        <span class="prod-icon-name">
+          <span>Возврат</span>
+          <span>365 дней</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="product-cart-table-wrapp">
+      <div class="prod-cart-table">
+        <div class="prod-cart-row hidden-mobile">
+          <div class="prod-cart-col t-col-1">Фото</div>
+          <div class="prod-cart-col t-col-2">Название</div>
+          <div class="prod-cart-col t-col-3">Размер</div>
+          <div class="prod-cart-col t-col-4">Количество</div>
+          <div class="prod-cart-col t-col-5">Цена</div>
+        </div>
+
+        <div class="prod-cart-row">
+          <div class="prod-cart-col t-col-1">
+            <span class="prod-cart-img"><img src="img/prod-min1.jpg" alt=""></span>
+          </div>
+
+          <div class="prod-cart-col t-col-2">
+            <span class="prod-cart-name">Nike Zoom Vapor</span>
+          </div>
+
+          <div class="prod-cart-col t-col-3">
+            <div class="prod-cart-select-wrapp">
+              <select name="" id="">
+                <option value="">41</option>
+                <option value="">42</option>
+                <option value="">43</option>
+                <option value="">44</option>
+                <option value="">45</option>
+              </select>
+            </div>
+            <div class="prod-cart-check-wrapp">
+              <input type="checkbox" id="ch1">
+              <label for="ch1">Не уверен в размере - привезите несколько</label>
+            </div>
+          </div>
+
+          <div class="prod-cart-col t-col-4">
+            <div class="col-panel-tc">
+              <span class="minus-input">-</span>
+              <input type="text" value="1">
+              <span class="plus-input">+</span>
+            </div>
+          </div>
+
+          <div class="prod-cart-col t-col-5">
+            <span class="prod-cart-price">3 520 <i class="rubl">₽</i></span>
+          </div>
+        </div>
+
+
+        <div class="prod-cart-row">
+          <div class="prod-cart-col t-col-1">
+            <span class="prod-cart-img"><img src="img/prod-min2.jpg" alt=""></span>
+          </div>
+
+          <div class="prod-cart-col t-col-2">
+            <span class="prod-cart-name">Nike Zoom Vapor</span>
+          </div>
+
+          <div class="prod-cart-col t-col-3">
+            <div class="prod-cart-select-wrapp">
+              <select name="" id="">
+                <option value="">41</option>
+                <option value="">42</option>
+                <option value="">43</option>
+                <option value="">44</option>
+                <option value="">45</option>
+              </select>
+            </div>
+            <div class="prod-cart-check-wrapp">
+              <input type="checkbox" id="ch2">
+              <label for="ch2">Не уверен в размере - привезите несколько</label>
+            </div>
+          </div>
+
+          <div class="prod-cart-col t-col-4">
+            <div class="col-panel-tc">
+              <span class="minus-input">-</span>
+              <input type="text" value="1">
+              <span class="plus-input">+</span>
+            </div>
+          </div>
+
+          <div class="prod-cart-col t-col-5">
+            <span class="prod-cart-price">4 390 <i class="rubl">₽</i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-cart-table-summ">
+        <div class="cart-table-del">
+          <b>Доставка:</b>
+          <span class="cart-table-del-item">
+            <input type="radio" checked id="rad1" name="delrad">
+            <label for="rad1">по Москве</label>
+          </span>
+          <span class="cart-table-del-item">
+            <input type="radio" id="rad2" name="delrad">
+            <label for="rad2">по России</label>
+          </span>
+        </div>
+
+        <div class="cart-table-summ-value">
+          <span>Итого:</span>
+          <span class="prod-cart-price">3 520 <i class="rubl">₽</i></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-contacts-form">
+      <form action="#">
+        <div class="form-group">
+          <label for="inputName">Ваше имя</label>
+          <div class="icon-input">
+            <i class="icon icon-user-input"></i>
+            <input type="text" placeholder="ВАШЕ ИМЯ" id="inputName">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPhone">Ваш телефон</label>
+          <div class="icon-input">
+            <i class="icon icon-phone-input"></i>
+            <input type="text" placeholder="+7" id="inputPhone" class="mask-phone">
+          </div>
+        </div>
+        <button class="btn" type="submit">ОФОРМИТЬ ЗАКАЗ</button>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- header -->
+  <header id="header" class="header header-main">
+    <div class="head-panel hidden-devices">
+      <div class="container group">
+        <div class="head-city">
+          <div class="head-city-active">
+            <i class="icon icon-location"></i>
+            <span>Москва</span>
+          </div>
+          <div class="head-city-list">
+            <span class="head-city-item"><a href="#">Санкт-Петербург</a></span>
+          </div>
+        </div>
+
+
+        <div class="head-nav">
+          <a href="#">О компании</a>
+          <a href="#">Гарантии и возврат</a>
+          <a href="#">Отзывы</a>
+          <a href="#">Доставка и оплата</a>
+          <a href="#">FAQ</a>
+          <a href="#">Интересное</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container group">
+      <div class="logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+
+      <div class="header-inner-info">
+        <div class="header-contacts-panel hidden-devices">
+          <div class="head-slogan">Дисконт-центр оригинальных Nike Air Max</div>
+          <div class="head-delivery-info">Доставка по Москве и РФ</div>
+          <div class="head-work">Работаем ежедневно, без выходных <span>10.00 - 21.00</span></div>
+          <div class="head-phone">
+            <span class="head-number"><span>8 (499)</span> 110-51-49</span>
+            <a href="#callModal" class="open-popup-link">Перезвоните мне</a>
+          </div>
+        </div>
+
+
+        <div class="head-menu">
+          <div class="menu-icon-wrap">
+            <span class="menu-icon">
+              <span></span>
+            </span>
+          </div>
+
+          <div class="menu-wrapper-fixed">
+            <div class="menu-open-wrapper">
+
+              <nav class="header-nav">
+                <ul class="menu">
+                  <li class="menu-sale">
+                    <a href="#">
+                      <i class="icon icon-fire"></i>
+                      <span>SALE</span>
+                    </a>
+                  </li>
+                  <li><a href="#">мУЖСКИЕ</a></li>
+                  <li><a href="#">Женские</a></li>
+                  <li><a href="#">Air Max 2017</a></li>
+                  <li><a href="#">Air Max 95</a></li>
+                  <li><a href="#">Air Max 90</a></li>
+                </ul>
+              </nav>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-form">
+        <form action="#">
+          <div class="search-inner">
+            <input type="text" placeholder="Поиск">
+            <span class="search-close"></span>
+          </div>
+          <span class="search-btn"></span>
+        </form>
+      </div>
+
+      <div class="mobile-call hidden-desktop">
+        <a href="tel:+374658294556387">
+          <i class="icon icon-phone"></i>
+        </a>
+      </div>
+
+      <div class="head-cart">
+        <a href="#cartModal" class="head-cart-link open-popup-link">
+          <i class="icon icon-cart"></i>
+          <span class="head-cart-value">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- end header -->
+
+
+  <section id="middle">
+
+    <div class="main-banner">
+      <div class="container">
+        <div class="main-banner-flex">
+          <div class="main-banner__title">
+            <p class="font-size-33 text-uppercase text-white line-height-1 font-proxima-nova-bold">Оригинальные кроссовки <br><span class="text-red">New Balance</span> в магазине <br> в центре Москвы</p>
+          </div>
+          <div class="main-banner__text-bottom mb50">
+            <p class="icon-wrapper mb20"><i class="icon-newbalance"></i></p>
+            <p class="text-center font-size-18 text-uppercase text-white"><b>Более 200 моделей <br> любого размера в наличии</b></p>
+          </div>
+          <div class="main-banner__exclamation">
+            <p class="font-size-16 text-white">Работаем с 2007 года</p>
+            <p class="font-size-16 text-white">Более 50 000 довольных клиентов</p>
+          </div>
+          <div class="main-banner__sneaker">
+            <img class="main-banner__sneaker-image" src="img/newbalances/image-sneaker.png" alt="">
+          </div>
+          <div class="main-banner__discount">
+            <div class="main-banner-discount-flex">
+              <span class="main-banner__discount-value">-60</span>
+              <span class="main-banner__discount-percent">%</span>
+            </div>
+            <div class="main-banner-subdiscount-text">
+              <div class="main-banner-only-for">
+                <p class="font-size-20 text-white text-uppercase text-center mb30">Только до <span class="jqs-future-date">20 сентября</span></p>
+                <p class="text-center"><a class="button button_brown" href="#">К скидкам</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="triggers">
+      <div class="container">
+        <div class="triggers-flex">
+          <div class="trigger-item">
+            <div class="trigger-item__icon">
+              <i class="icon-trigger-official-distributor"></i>
+            </div>
+            <p class="trigger-item__text">Официальный поставщик <br> New Balance</p>
+          </div>
+          <div class="trigger-item">
+            <div class="trigger-item__icon">
+              <i class="icon-trigger-guarantee"></i>
+            </div>
+            <p class="trigger-item__text">Гарантия <br> 60 дней</p>
+          </div>
+          <div class="trigger-item">
+            <div class="trigger-item__icon">
+              <i class="icon-trigger-7-pairs"></i>
+            </div>
+            <p class="trigger-item__text">Привезём до 7 пар <br> на примерку</p>
+          </div>
+          <div class="trigger-item">
+            <div class="trigger-item__icon">
+              <i class="icon-trigger-delivery"></i>
+            </div>
+            <p class="trigger-item__text">Доставка <br> по Москве за 24 часа</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="two-column-wrapp group">
+        <div class="aside-column">
+          <div class="aside-open-mobile">Выбрать по параметрам</div>
+
+          <div class="hidden-aside-mobile">
+            <div class="param-links-wrapp">
+              <ul class="param-nav">
+                <li>
+                  <span class="param-nav-item-tt">Распродажа</span>
+                  <ul>
+                    <li><a href="#">Nike Air Max 1 Ultra</a></li>
+                    <li><a href="#">Nike Air Max 87</a></li>
+                    <li><a href="#">Nike Air Max 90</a></li>
+                    <li><a href="#">Air Max 90 Hyperfuse</a></li>
+                    <li><a href="#">Air Max 90 Mid Winter</a></li>
+                    <li><a href="#">Air Max 90 VT</a></li>
+                    <li><a href="#">Air Max 90 Камуфляж</a></li>
+                    <li><a href="#">Air Max 90 Цветочный микс</a></li>
+                    <li><a href="#">Nike Air Max 95</a></li>
+                    <li><a href="#">Air Max 95 Dynamic Flywire</a></li>
+                    <li><a href="#">Air Max 95 Sneakerboot</a></li>
+                    <li><a href="#">Air Max 95 Stussy</a></li>
+                    <li><a href="#">Nike Air Max 97</a></li>
+                    <li><a href="#">Nike Air Max 98 Supreme</a></li>
+                    <li><a href="#">Nike Air Max 2013</a></li>
+                    <li><a href="#">Nike Air Max 2014</a></li>
+                    <li><a href="#">Nike Air Max 2015</a></li>
+                    <li><a href="#">Nike Air Max 2016</a></li>
+                    <li><a href="#">Nike Air Max 2017</a></li>
+                    <li><a href="#">Nike Air Max BW</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="param-nav-item-tt">Air Max Женские</span>
+                  <ul>
+                    <li><a href="#">Nike Air Max 1 Ultra</a></li>
+                    <li><a href="#">Nike Air Max 87</a></li>
+                    <li><a href="#">Nike Air Max 90</a></li>
+                    <li><a href="#">Air Max 90 Hyperfuse</a></li>
+                    <li><a href="#">Air Max 90 Mid Winter</a></li>
+                    <li><a href="#">Air Max 90 VT</a></li>
+                    <li><a href="#">Air Max 90 Камуфляж</a></li>
+                    <li><a href="#">Air Max 90 Цветочный микс</a></li>
+                    <li><a href="#">Nike Air Max 95</a></li>
+                    <li><a href="#">Air Max 95 Dynamic Flywire</a></li>
+                    <li><a href="#">Air Max 95 Sneakerboot</a></li>
+                    <li><a href="#">Air Max 95 Stussy</a></li>
+                    <li><a href="#">Nike Air Max 97</a></li>
+                    <li><a href="#">Nike Air Max 98 Supreme</a></li>
+                    <li><a href="#">Nike Air Max 2013</a></li>
+                    <li><a href="#">Nike Air Max 2014</a></li>
+                    <li><a href="#">Nike Air Max 2015</a></li>
+                    <li><a href="#">Nike Air Max 2016</a></li>
+                    <li><a href="#">Nike Air Max 2017</a></li>
+                    <li><a href="#">Nike Air Max BW</a></li>
+                  </ul>
+                </li>
+                <li class="open">
+                  <span class="param-nav-item-tt">Air Max Мужские</span>
+                  <ul>
+                    <li><a href="#">Nike Air Max 1 Ultra</a></li>
+                    <li><a href="#">Nike Air Max 87</a></li>
+                    <li><a href="#">Nike Air Max 90</a></li>
+                    <li><a href="#">Air Max 90 Hyperfuse</a></li>
+                    <li><a href="#">Air Max 90 Mid Winter</a></li>
+                    <li><a href="#">Air Max 90 VT</a></li>
+                    <li><a href="#">Air Max 90 Камуфляж</a></li>
+                    <li><a href="#">Air Max 90 Цветочный микс</a></li>
+                    <li><a href="#">Nike Air Max 95</a></li>
+                    <li><a href="#">Air Max 95 Dynamic Flywire</a></li>
+                    <li><a href="#">Air Max 95 Sneakerboot</a></li>
+                    <li><a href="#">Air Max 95 Stussy</a></li>
+                    <li><a href="#">Nike Air Max 97</a></li>
+                    <li><a href="#">Nike Air Max 98 Supreme</a></li>
+                    <li><a href="#">Nike Air Max 2013</a></li>
+                    <li><a href="#">Nike Air Max 2014</a></li>
+                    <li><a href="#">Nike Air Max 2015</a></li>
+                    <li><a href="#">Nike Air Max 2016</a></li>
+                    <li><a href="#">Nike Air Max 2017</a></li>
+                    <li><a href="#">Nike Air Max BW</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="param-item">
+              <span class="param-tt">Цвет</span>
+              <div class="param-colors">
+                <a href="#" class="p-color-1"></a>
+                <a href="#" class="p-color-2"></a>
+                <a href="#" class="p-color-3"></a>
+                <a href="#" class="p-color-4"></a>
+                <a href="#" class="p-color-5"></a>
+                <a href="#" class="p-color-6"></a>
+                <a href="#" class="p-color-7"></a>
+                <a href="#" class="p-color-8"></a>
+                <a href="#" class="p-color-9"></a>
+                <a href="#" class="p-color-10"></a>
+                <a href="#" class="p-color-11"></a>
+                <a href="#" class="p-color-12"></a>
+                <a href="#" class="p-color-13"></a>
+              </div>
+            </div>
+
+
+            <div class="param-item">
+              <span class="param-tt">Сезон</span>
+              <div class="param-links">
+                <a href="#">Зима,</a>
+                <a href="#">Осень,</a>
+                <a href="#">Лето,</a>
+                <a href="#">Межсезонные,</a>
+                <a href="#">Всесезонные</a>
+              </div>
+            </div>
+
+            <div class="param-item">
+              <span class="param-tt">Материал</span>
+              <div class="param-links">
+                <a href="#">Замша,</a>
+                <a href="#">Кожа,</a>
+                <a href="#">Мех,</a>
+                <a href="#">Нубук,</a>
+                <a href="#">Синтетика,</a>
+                <a href="#">Ткань</a>
+              </div>
+            </div>
+
+            <div class="param-item">
+              <span class="param-tt">Вид спорта</span>
+              <div class="param-links">
+                <a href="#">Бег,</a>
+                <a href="#">Фитнес,</a>
+                <a href="#">Ходьба</a>
+              </div>
+            </div>
+
+            <div class="param-item">
+              <span class="param-tt">Размер (евро)</span>
+              <div class="param-links">
+                <a href="#">36,</a>
+                <a href="#">37,</a>
+                <a href="#">38,</a>
+                <a href="#">39,</a>
+                <a href="#">40,</a>
+                <a href="#">41,</a>
+                <a href="#">42,</a>
+                <a href="#">43,</a>
+                <a href="#">44,</a>
+                <a href="#">45</a>
+              </div>
+            </div>
+
+            <div class="param-item">
+              <span class="param-tt">Особенности</span>
+              <div class="param-links">
+                <a href="#">Со светящейся подошвой</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="main-column">
+          <span class="site-h1-tt">БЫСТРЫЙ ПОИСК</span>
+          <div class="catalog-product">
+            <div class="product-item">
+              <div class="product-inner">
+                <a href="#">
+                  <div class="product-label">
+                    <span class="product-discount">-65%</span>
+                  </div>
+                  <div class="product-img">
+                    <img src="img/prod1.jpg" alt="">
+                  </div>
+                  <div class="prodcut-name">
+                    <span>Nike Air Max 90 Leather</span>
+                    <span>Black/White</span>
+                  </div>
+                  <div class="product-price">
+                    <span>4 790 <i class="rubl">₽</i></span>
+                    <del>9 975 <i>₽</i></del>
+                  </div>
+                </a>
+                <div class="product-btn">
+                  <a href="#" class="btn btn-navy">КУПИТЬ</a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="product-item">
+              <div class="product-inner">
+                <a href="#">
+                  <div class="product-label">
+                    <span class="product-discount">-65%</span>
+                  </div>
+                  <div class="product-img">
+                    <img src="img/prod2.jpg" alt="">
+                  </div>
+                  <div class="prodcut-name">
+                    <span>Nike Air Max 2017</span>
+                    <span>Red/Blue</span>
+                  </div>
+                  <div class="product-price">
+                    <span>4 790 <i class="rubl">₽</i></span>
+                    <del>9 975 <i>₽</i></del>
+                  </div>
+                </a>
+                <div class="product-btn">
+                  <a href="#" class="btn btn-navy">КУПИТЬ</a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="product-item">
+              <div class="product-inner">
+                <a href="#">
+                  <div class="product-label">
+                    <span class="product-discount">-65%</span>
+                    <span class="product-new">Новинка</span>
+                  </div>
+                  <div class="product-img">
+                    <img src="img/prod3.jpg" alt="">
+                  </div>
+                  <div class="prodcut-name">
+                    <span>Nike Air Max 2017</span>
+                    <span>Blue</span>
+                  </div>
+                  <div class="product-price">
+                    <span>4 790 <i class="rubl">₽</i></span>
+                    <del>9 975 <i>₽</i></del>
+                  </div>
+                </a>
+                <div class="product-btn">
+                  <a href="#" class="btn btn-navy">КУПИТЬ</a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="product-item">
+              <div class="product-inner">
+                <a href="#">
+                  <div class="product-label">
+                    <span class="product-discount">-65%</span>
+                  </div>
+                  <div class="product-img">
+                    <img src="img/prod4.jpg" alt="">
+                  </div>
+                  <div class="prodcut-name">
+                    <span>Nike Air Max 95</span>
+                    <span>Ultra Trainer White-Blue</span>
+                  </div>
+                  <div class="product-price">
+                    <span>4 790 <i class="rubl">₽</i></span>
+                    <del>9 975 <i>₽</i></del>
+                  </div>
+                </a>
+                <div class="product-btn">
+                  <a href="#" class="btn btn-navy">КУПИТЬ</a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="product-item">
+              <div class="product-inner">
+                <a href="#">
+                  <div class="product-label">
+                    <span class="product-discount">-65%</span>
+                    <span class="product-new">Новинка</span>
+                  </div>
+                  <div class="product-img">
+                    <img src="img/prod5.jpg" alt="">
+                  </div>
+                  <div class="prodcut-name">
+                    <span>Nike Air Max 90</span>
+                    <span>Black Red Grey</span>
+                  </div>
+                  <div class="product-price">
+                    <span>4 790 <i class="rubl">₽</i></span>
+                    <del>9 975 <i>₽</i></del>
+                  </div>
+                </a>
+                <div class="product-btn">
+                  <a href="#" class="btn btn-navy">КУПИТЬ</a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="product-item">
+              <div class="product-inner">
+                <a href="#">
+                  <div class="product-label">
+                    <span class="product-discount">-65%</span>
+                    <span class="product-new">Новинка</span>
+                  </div>
+                  <div class="product-img">
+                    <img src="img/prod6.jpg" alt="">
+                  </div>
+                  <div class="prodcut-name">
+                    <span>Nike Air Max 90</span>
+                    <span>Dark Red</span>
+                  </div>
+                  <div class="product-price">
+                    <span>4 790 <i class="rubl">₽</i></span>
+                    <del>9 975 <i>₽</i></del>
+                  </div>
+                </a>
+                <div class="product-btn">
+                  <a href="#" class="btn btn-navy">КУПИТЬ</a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="product-item">
+              <div class="product-inner">
+                <a href="#">
+                  <div class="product-label">
+                    <span class="product-discount">-65%</span>
+                  </div>
+                  <div class="product-img">
+                    <img src="img/prod7.jpg" alt="">
+                  </div>
+                  <div class="prodcut-name">
+                    <span>Nike Air Max 90</span>
+                    <span>Leather White/Black</span>
+                  </div>
+                  <div class="product-price">
+                    <span>4 790 <i class="rubl">₽</i></span>
+                    <del>9 975 <i>₽</i></del>
+                  </div>
+                </a>
+                <div class="product-btn">
+                  <a href="#" class="btn btn-navy">КУПИТЬ</a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="product-item">
+              <div class="product-inner">
+                <a href="#">
+                  <div class="product-label">
+                    <span class="product-discount">-65%</span>
+                  </div>
+                  <div class="product-img">
+                    <img src="img/prod8.jpg" alt="">
+                  </div>
+                  <div class="prodcut-name">
+                    <span>Nike Air Max 90</span>
+                    <span>Black Red Grey</span>
+                  </div>
+                  <div class="product-price">
+                    <span>4 790 <i class="rubl">₽</i></span>
+                    <del>9 975 <i>₽</i></del>
+                  </div>
+                </a>
+                <div class="product-btn">
+                  <a href="#" class="btn btn-navy">КУПИТЬ</a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="product-item">
+              <div class="product-inner">
+                <a href="#">
+                  <div class="product-label">
+                    <span class="product-discount">-65%</span>
+                  </div>
+                  <div class="product-img">
+                    <img src="img/prod9.jpg" alt="">
+                  </div>
+                  <div class="prodcut-name">
+                    <span>Nike Air Max 90</span>
+                    <span>Pink</span>
+                  </div>
+                  <div class="product-price">
+                    <span>4 790 <i class="rubl">₽</i></span>
+                    <del>9 975 <i>₽</i></del>
+                  </div>
+                </a>
+                <div class="product-btn">
+                  <a href="#" class="btn btn-navy">КУПИТЬ</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="fact-wrapp">
+            <div class="fact-img"><img src="img/fact-prod.png" alt=""></div>
+            <span class="site-h4-tt">ФАКТЫ О NIKE AIR MAX 95, КОТОРЫЕ ЗНАЮТ ЕДИНИЦЫ</span>
+            <div class="fact-carousel owl-carousel">
+              <div>
+                <p>Компания была основана в 1964 году студентом Филом Найтом, бегуном на средние дистанции и его тренером Биллом Бауэрмано. Сначала она носила название Blue Ribbon Sports и специализировалась на заказе кроссовок в азиатских странах и последующей продаже их на американском рынке</p>
+              </div>
+              <div>
+                <p>Компания была основана в 1964 году студентом Филом Найтом, бегуном на средние дистанции и его тренером Биллом Бауэрмано. Сначала она носила название Blue Ribbon Sports и специализировалась на заказе кроссовок в азиатских странах и последующей продаже их на американском рынке</p>
+              </div>
+              <div>
+                <p>Компания была основана в 1964 году студентом Филом Найтом, бегуном на средние дистанции и его тренером Биллом Бауэрмано. Сначала она носила название Blue Ribbon Sports и специализировалась на заказе кроссовок в азиатских странах и последующей продаже их на американском рынке</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-banner-nav group">
+        <div class="b-item-nav b-item-1">
+          <a href="#">
+            <img src="img/banner-md-1.jpg" alt="">
+            <span class="b-item-tt">
+              <span>Женские</span>
+              <span>air max</span>
+              <span class="btn btn-arrow btn-md btn-sm-text-size">Смотреть каталог</span>
+            </span>
+          </a>
+        </div>
+        <div class="b-item-nav b-item-2">
+          <a href="#">
+            <img src="img/banner-md-2.jpg" alt="">
+            <span class="b-item-tt">
+              <span>Мужские</span>
+              <span>air max</span>
+              <span class="btn btn-arrow btn-md btn-sm-text-size">Смотреть каталог</span>
+            </span>
+          </a>
+        </div>
+        <div class="b-item-nav b-item-3">
+          <a href="#">
+            <img src="img/banner-md-3.jpg" alt="">
+            <span class="b-item-tt">
+              <span>air max</span>
+              <span>2017</span>
+              <span class="btn btn-arrow btn-md btn-sm-text-size">Смотреть каталог</span>
+            </span>
+          </a>
+        </div>
+        <div class="b-item-nav b-item-4">
+          <a href="#">
+            <img src="img/banner-md-4.jpg" alt="">
+            <span class="b-item-tt">
+              <span>Air max 95</span>
+              <span class="btn btn-arrow btn-md btn-sm-text-size">Смотреть каталог</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="about-main">
+        <h1>
+          NIKE AIR MAX САМОЕ ПРИВЛЕКАТЕЛЬНОЕ
+          ПРЕДЛОЖЕНИЕ НА РЫНКЕ СПОРТИВНОЙ ОБУВИ
+        </h1>
+
+        <div class="group">
+          <div class="about-column">
+            <p>Дизайн кроссовок Nike Air Max Zero был создан на основе скетча 1985 года, найденного в архивах компании. В то время для воплощения идей кроссовка не существовало достаточно инновационных материалов и технологий, поэтому смелый концепт так и остался на бумаге.</p>
+            <p>Дизайнер Nike Тинкер Хэтфилд в свое время присоединился к компании в качестве архитектора — именно архитектура во многом послужила вдохновением для создания и последующего развития линейки Air Max. Особую роль сыграл Центр искусства и культуры имени Жоржа Помпиду в Париже, где все внутренние коммуникации здания размещены снаружи, покрашены в яркие цвета и демонстрируют свою функциональность.</p>
+          </div>
+          <div class="about-column">
+            <p>Впервые эту идею дизайнер реализовал на бумаге в концепте Air Max Zero: минималистичная подошва, мягкий бесшовный нос, вынесенная наружу фиксация пятки. Эти кроссовки не стали самыми первыми Air Max, но без этого эскиза не существовало бы первой модели.</p>
+            <p>В середине 80-х Тинкер Хэтфилд, уже работая в компании, переключился с архитектурных задач на дизайн. «Когда я работал над дизайнами кроссовок, я всегда думал о том, что воздушная подушка — это полная мистика для всех, кроме нас, создателей. Людям, может, и нравилась наша обувь, но они никак не ассоциировали её с производительностью», — вспоминал дизайнер.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="question-main-panel">
+      <div class="container group">
+        <div class="question-m-tt">
+          <span class="site-h1-tt">Остались вопросы?</span>
+          <span>Оставьте свой номер и мы перезвоним ровно через 37 секунд, ответим на все вопросы и поможем подобрать вам обувь</span>
+        </div>
+        <div class="question-form">
+          <span>Введите ваш телефон:</span>
+          <form action="#">
+            <input type="text" class="mask-phone" placeholder="+7">
+            <button type="button" class="btn btn-md">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section><!-- #middle-->
+
+
+  <div class="page-buffer"></div>
+</div><!-- #wrapper -->
+
+
+<!-- footer -->
+<footer id="footer" class="footer">
+ <div class="footer-contacts">
+    <div class="container">
+      <div class="f-contacts-inner">
+        <span class="f-contacts-with-us">
+          <a href="#">Свяжитесь с нами</a>
+        </span>
+        <span class="f-contacts-phone">
+          <span>8 (499)</span> 110-51-49
+        </span>
+        <span class="f-contacts-mail">top-sneakers@gmail.com</span>
+        <span class="f-contacts-adress-wrapp">
+          <span class="f-contacts-city">Москва</span>
+          <span class="f-contacts-adress">Серпуховский вал. 7, офис 238</span>
+        </span>
+        <div class="f-contacts-soc">
+          <a href="#" class="soc-vk"></a>
+          <a href="#" class="soc-fb"></a>
+          <a href="#" class="soc-insta"></a>
+          <a href="#" class="soc-tw"></a>
+        </div>
+      </div>
+    </div>
+ </div>
+
+  <div class="container hidden-devices">
+    <div class="footer-nav">
+      <div class="footer-nav-item">
+        <span class="footer-nav-tt">КОНТАКТЫ</span>
+        <ul>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">Возврат</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-item">
+        <span class="footer-nav-tt">ИНФОРМАЦИЯ</span>
+        <ul>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Гарантии и возврат</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">Распродажа</a></li>
+          <li><a href="#">Интересное</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-item">
+        <span class="footer-nav-tt">Цвет</span>
+        <ul>
+          <li><a href="#">Камуфляж</a></li>
+          <li><a href="#">Темно-синий</a></li>
+          <li><a href="#">Черный</a></li>
+          <li><a href="#">Синий</a></li>
+          <li><a href="#">Зеленый</a></li>
+          <li><a href="#">Красный</a></li>
+          <li><a href="#">Розовый</a></li>
+          <li><a href="#">Белый</a></li>
+          <li><a href="#">Бежевый</a></li>
+          <li><a href="#">Бирюзовый</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-item">
+        <span class="footer-nav-tt">Материал</span>
+        <ul>
+          <li><a href="#">Кожа</a></li>
+          <li><a href="#">Замша</a></li>
+          <li><a href="#">Ткань</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-item">
+        <span class="footer-nav-tt">Пол</span>
+        <ul>
+          <li><a href="#">Женские</a></li>
+          <li><a href="#">Подростковые</a></li>
+          <li><a href="#">Мужские</a></li>
+          <li><a href="#">Детские</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-item">
+        <span class="footer-nav-tt">Сезон</span>
+        <ul>
+          <li><a href="#">Зима</a></li>
+          <li><a href="#">Лето</a></li>
+          <li><a href="#">Межсезонье</a></li>
+          <li><a href="#">Всесезонные</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- end footer -->
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libsmin/owl.carousel.min.js"></script>
+<script src="js/libsmin/magnific-popup.min.js"></script>
+<script src="js/libsmin/jcf.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
