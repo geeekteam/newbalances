@@ -40,6 +40,14 @@
   line-height: 1;
 }
 
+@media only screen and (max-width: 767px) {
+
+  .mob-fz-22 {
+    font-size: 22px;
+  }
+
+}
+
 /*end font properties*/
 
 
@@ -65,5 +73,17 @@
 
 .mb50 {
   margin-bottom: 50px;
+}
+
+.mb70 {
+  margin-bottom: 70px;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .mob-mb-30 {
+    margin-bottom: 30px;
+  }
+
 }
 /*end margins and paddings*/
