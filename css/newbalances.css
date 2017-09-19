@@ -3,6 +3,16 @@ p {
   margin-bottom: 0;
 }
 
+b, strong {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.font-proxima-nova-bold {
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-weight: 700;
+}
+
 .main-banner {
   position: relative;
   background: url("../img/newbalances/main-banner.png") no-repeat;
@@ -15,20 +25,23 @@ p {
   display: flex;
 }
 
+.main-banner__left-side {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
 .main-banner__title {
   padding-top: 90px;
   max-width: 515px;
   margin-bottom: 45px;
+  flex-shrink: 0;
 }
 
-b, strong {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-}
-
-.font-proxima-nova-bold {
-  font-family: "Proxima Nova Rg", sans-serif;
-  font-weight: 700;
+.main-banner__text-middle {
+  text-align: center;
+  max-width: 310px;
+  margin-left: 40px;
 }
 
 .icon-newbalance {
@@ -40,15 +53,10 @@ b, strong {
   margin: 0 auto;
 }
 
-.main-banner__text-bottom {
-  text-align: center;
-  max-width: 310px;
-}
-
 .main-banner__exclamation {
   position: relative;
   max-width: 400px;
-  margin-left: 250px;
+  margin-left: 300px;
   border: 1px solid #c2a062;
   padding-left: 80px;
   padding-right: 30px;
@@ -69,22 +77,24 @@ b, strong {
   height: 37px;
 }
 
+.main-banner__right-side {
+  position: relative;
+  display: flex;
+  margin-left: -230px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
 .main-banner__sneaker {
-  position: absolute;
-  top: 20%;
-  left: 56%;
-  transform: translate(-56%, 0);
+  margin-top: 90px;
   z-index: 10;
 }
 
 .main-banner__discount {
-  position: absolute;
-  top: 0;
-  right: 7%;
-  transform: translateX(-7%);
   background: url("../img/newbalances/discount-bg.png") no-repeat;
   width: 704px;
   height: 480px;
+  margin-left: -280px;
 }
 
 .main-banner__discount-value,
@@ -214,4 +224,166 @@ b, strong {
   font-size: 14px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.main-content {
+  padding-top: 50px;
+}
+
+.main-content__flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-filter {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d6d6d6;
+  border-bottom: none;
+  width: 245px;
+  flex-shrink: 0;
+}
+
+.main-filter:last-child {
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.main-filter__section {
+  padding: 25px 23px;
+}
+
+.main-filter__items {
+  display: flex;
+}
+
+.main-filter__items_is-column {
+  flex-direction: column;
+}
+
+.main-filter__items_is-wrap {
+  flex-wrap: wrap;
+}
+
+.main-filter-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+
+.main-filter-text__title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.main-filter-text__link {
+  text-decoration: none;
+  color: #000000;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.main-filter-text__link:hover{
+  color: #e21836;
+}
+
+.main-filter-text__link_is-active {
+  position: relative;
+  color: #e21836;
+  padding-left: 40px;
+  margin-left: -15px;
+  font-weight: bold;
+}
+
+.main-filter-text__link_is-active::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  background: url("../img/newbalances/filter-link-is-active.png") no-repeat;
+  width: 36px;
+  height: 7px;
+  background-size: 36px 7px;
+}
+
+.main-filter-text__link:last-child {
+  margin-bottom: 0;
+}
+
+.main-filter__item-name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  margin-right: 5px;
+  line-height: 1;
+}
+
+.main-filter__item-count {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  line-height: 1;
+}
+
+.main-filter-colors {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -7px;
+  margin-left: -7px;
+}
+
+.main-filter-colors__wrapper {
+  position: relative;
+  padding-bottom: 7px;
+  padding-left: 7px;
+  flex-shrink: 0;
+  width: 37px;
+  display: block;
+}
+
+.main-filter-colors__color {
+  border: 1px solid #e8e8e8;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.main-filter-colors__color:hover {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  border-color: transparent;
+}
+
+.main-filter-sizes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -5px;
+  margin-left: -5px;
+}
+
+.main-filter-sizes__wrapper {
+  padding-bottom: 5px;
+  padding-left: 5px;
+  width: 67px;
+}
+
+.main-filter-sizes__size {
+  width: 62px;
+  height: 34px;
+  border: 1px solid #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.main-filter-sizes__size:hover,
+.main-filter-sizes__size_is-active{
+  color: #ffffff;
+  background-color: #e21836;
 }
