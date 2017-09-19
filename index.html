@@ -1,954 +1,1040 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8">
-  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <title></title>
-  <meta name="keywords" content="">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900,900i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css" type="text/css">
-  <link rel="stylesheet" href="css/newbalances.css" type="text/css">
-  <link rel="stylesheet" href="css/fonts.css" type="text/css">
-  <link rel="stylesheet" href="css/framework.css" type="text/css">
+    <meta charset="utf-8">
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <title></title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900,900i&amp;subset=cyrillic,cyrillic-ext"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/newbalances.css" type="text/css">
+    <link rel="stylesheet" href="css/fonts.css" type="text/css">
+    <link rel="stylesheet" href="css/framework.css" type="text/css">
 </head>
 
 <body>
 
 <div id="wrapper">
 
-  <div id="callModal" class="call-modal mfp-hide">
-    <div class="modal-contacts-form">
-      <span class="call-modal-tt">Обратный звонок</span>
-      <form action="#">
-        <div class="form-group">
-          <label for="inputName">Ваше имя</label>
-          <div class="icon-input">
-            <i class="icon icon-user-input"></i>
-            <input type="text" placeholder="ВАШЕ ИМЯ" id="inputName">
-          </div>
+    <div id="callModal" class="call-modal mfp-hide">
+        <div class="modal-contacts-form">
+            <span class="call-modal-tt">Обратный звонок</span>
+            <form action="#">
+                <div class="form-group">
+                    <label for="inputName">Ваше имя</label>
+                    <div class="icon-input">
+                        <i class="icon icon-user-input"></i>
+                        <input type="text" placeholder="ВАШЕ ИМЯ" id="inputName">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPhone">Ваш телефон</label>
+                    <div class="icon-input">
+                        <i class="icon icon-phone-input"></i>
+                        <input type="text" placeholder="+7" id="inputPhone" class="mask-phone">
+                    </div>
+                </div>
+                <button class="btn" type="submit">ОФОРМИТЬ ЗАКАЗ</button>
+            </form>
         </div>
-        <div class="form-group">
-          <label for="inputPhone">Ваш телефон</label>
-          <div class="icon-input">
-            <i class="icon icon-phone-input"></i>
-            <input type="text" placeholder="+7" id="inputPhone" class="mask-phone">
-          </div>
-        </div>
-        <button class="btn" type="submit">ОФОРМИТЬ ЗАКАЗ</button>
-      </form>
     </div>
-  </div>
 
 
-  <div id="cartModal" class="cart-modal mfp-hide">
-    <div class="product-info-icons hidden-devices">
-      <div class="prod-icon-item">
-        <i class="icon icon-rouble"></i>
-        <span class="prod-icon-name">
+    <div id="cartModal" class="cart-modal mfp-hide">
+        <div class="product-info-icons hidden-devices">
+            <div class="prod-icon-item">
+                <i class="icon icon-rouble"></i>
+                <span class="prod-icon-name">
           <span>Оплата</span>
           <span>после примерки</span>
         </span>
-      </div>
+            </div>
 
-      <div class="prod-icon-item">
-        <i class="icon icon-sneakers"></i>
-        <span class="prod-icon-name">
+            <div class="prod-icon-item">
+                <i class="icon icon-sneakers"></i>
+                <span class="prod-icon-name">
           <span>До 4-х пар</span>
           <span>на выбор</span>
         </span>
-      </div>
+            </div>
 
-      <div class="prod-icon-item">
-        <i class="icon icon-guarantee">
-          <span class="icon-g-value-md">60</span>
-        </i>
-        <span class="prod-icon-name">
+            <div class="prod-icon-item">
+                <i class="icon icon-guarantee">
+                    <span class="icon-g-value-md">60</span>
+                </i>
+                <span class="prod-icon-name">
           <span>Гарантия</span>
           <span>60 дней</span>
         </span>
-      </div>
+            </div>
 
-      <div class="prod-icon-item">
-        <i class="icon icon-original-box"></i>
-        <span class="prod-icon-name">
+            <div class="prod-icon-item">
+                <i class="icon icon-original-box"></i>
+                <span class="prod-icon-name">
           <span>Оригинальные</span>
           <span>кроссовки Nike</span>
         </span>
-      </div>
+            </div>
 
-      <div class="prod-icon-item">
-        <i class="icon icon-guarantee">
-          <span class="icon-g-value-sm">365</span>
-        </i>
-        <span class="prod-icon-name">
+            <div class="prod-icon-item">
+                <i class="icon icon-guarantee">
+                    <span class="icon-g-value-sm">365</span>
+                </i>
+                <span class="prod-icon-name">
           <span>Возврат</span>
           <span>365 дней</span>
         </span>
-      </div>
-    </div>
-
-    <div class="product-cart-table-wrapp">
-      <div class="prod-cart-table">
-        <div class="prod-cart-row hidden-mobile">
-          <div class="prod-cart-col t-col-1">Фото</div>
-          <div class="prod-cart-col t-col-2">Название</div>
-          <div class="prod-cart-col t-col-3">Размер</div>
-          <div class="prod-cart-col t-col-4">Количество</div>
-          <div class="prod-cart-col t-col-5">Цена</div>
+            </div>
         </div>
 
-        <div class="prod-cart-row">
-          <div class="prod-cart-col t-col-1">
-            <span class="prod-cart-img"><img src="img/prod-min1.jpg" alt=""></span>
-          </div>
+        <div class="product-cart-table-wrapp">
+            <div class="prod-cart-table">
+                <div class="prod-cart-row hidden-mobile">
+                    <div class="prod-cart-col t-col-1">Фото</div>
+                    <div class="prod-cart-col t-col-2">Название</div>
+                    <div class="prod-cart-col t-col-3">Размер</div>
+                    <div class="prod-cart-col t-col-4">Количество</div>
+                    <div class="prod-cart-col t-col-5">Цена</div>
+                </div>
 
-          <div class="prod-cart-col t-col-2">
-            <span class="prod-cart-name">Nike Zoom Vapor</span>
-          </div>
+                <div class="prod-cart-row">
+                    <div class="prod-cart-col t-col-1">
+                        <span class="prod-cart-img"><img src="img/prod-min1.jpg" alt=""></span>
+                    </div>
 
-          <div class="prod-cart-col t-col-3">
-            <div class="prod-cart-select-wrapp">
-              <select name="" id="">
-                <option value="">41</option>
-                <option value="">42</option>
-                <option value="">43</option>
-                <option value="">44</option>
-                <option value="">45</option>
-              </select>
+                    <div class="prod-cart-col t-col-2">
+                        <span class="prod-cart-name">Nike Zoom Vapor</span>
+                    </div>
+
+                    <div class="prod-cart-col t-col-3">
+                        <div class="prod-cart-select-wrapp">
+                            <select name="" id="">
+                                <option value="">41</option>
+                                <option value="">42</option>
+                                <option value="">43</option>
+                                <option value="">44</option>
+                                <option value="">45</option>
+                            </select>
+                        </div>
+                        <div class="prod-cart-check-wrapp">
+                            <input type="checkbox" id="ch1">
+                            <label for="ch1">Не уверен в размере - привезите несколько</label>
+                        </div>
+                    </div>
+
+                    <div class="prod-cart-col t-col-4">
+                        <div class="col-panel-tc">
+                            <span class="minus-input">-</span>
+                            <input type="text" value="1">
+                            <span class="plus-input">+</span>
+                        </div>
+                    </div>
+
+                    <div class="prod-cart-col t-col-5">
+                        <span class="prod-cart-price">3 520 <i class="rubl">₽</i></span>
+                    </div>
+                </div>
+
+
+                <div class="prod-cart-row">
+                    <div class="prod-cart-col t-col-1">
+                        <span class="prod-cart-img"><img src="img/prod-min2.jpg" alt=""></span>
+                    </div>
+
+                    <div class="prod-cart-col t-col-2">
+                        <span class="prod-cart-name">Nike Zoom Vapor</span>
+                    </div>
+
+                    <div class="prod-cart-col t-col-3">
+                        <div class="prod-cart-select-wrapp">
+                            <select name="" id="">
+                                <option value="">41</option>
+                                <option value="">42</option>
+                                <option value="">43</option>
+                                <option value="">44</option>
+                                <option value="">45</option>
+                            </select>
+                        </div>
+                        <div class="prod-cart-check-wrapp">
+                            <input type="checkbox" id="ch2">
+                            <label for="ch2">Не уверен в размере - привезите несколько</label>
+                        </div>
+                    </div>
+
+                    <div class="prod-cart-col t-col-4">
+                        <div class="col-panel-tc">
+                            <span class="minus-input">-</span>
+                            <input type="text" value="1">
+                            <span class="plus-input">+</span>
+                        </div>
+                    </div>
+
+                    <div class="prod-cart-col t-col-5">
+                        <span class="prod-cart-price">4 390 <i class="rubl">₽</i></span>
+                    </div>
+                </div>
             </div>
-            <div class="prod-cart-check-wrapp">
-              <input type="checkbox" id="ch1">
-              <label for="ch1">Не уверен в размере - привезите несколько</label>
-            </div>
-          </div>
 
-          <div class="prod-cart-col t-col-4">
-            <div class="col-panel-tc">
-              <span class="minus-input">-</span>
-              <input type="text" value="1">
-              <span class="plus-input">+</span>
-            </div>
-          </div>
-
-          <div class="prod-cart-col t-col-5">
-            <span class="prod-cart-price">3 520 <i class="rubl">₽</i></span>
-          </div>
-        </div>
-
-
-        <div class="prod-cart-row">
-          <div class="prod-cart-col t-col-1">
-            <span class="prod-cart-img"><img src="img/prod-min2.jpg" alt=""></span>
-          </div>
-
-          <div class="prod-cart-col t-col-2">
-            <span class="prod-cart-name">Nike Zoom Vapor</span>
-          </div>
-
-          <div class="prod-cart-col t-col-3">
-            <div class="prod-cart-select-wrapp">
-              <select name="" id="">
-                <option value="">41</option>
-                <option value="">42</option>
-                <option value="">43</option>
-                <option value="">44</option>
-                <option value="">45</option>
-              </select>
-            </div>
-            <div class="prod-cart-check-wrapp">
-              <input type="checkbox" id="ch2">
-              <label for="ch2">Не уверен в размере - привезите несколько</label>
-            </div>
-          </div>
-
-          <div class="prod-cart-col t-col-4">
-            <div class="col-panel-tc">
-              <span class="minus-input">-</span>
-              <input type="text" value="1">
-              <span class="plus-input">+</span>
-            </div>
-          </div>
-
-          <div class="prod-cart-col t-col-5">
-            <span class="prod-cart-price">4 390 <i class="rubl">₽</i></span>
-          </div>
-        </div>
-      </div>
-
-      <div class="prod-cart-table-summ">
-        <div class="cart-table-del">
-          <b>Доставка:</b>
-          <span class="cart-table-del-item">
+            <div class="prod-cart-table-summ">
+                <div class="cart-table-del">
+                    <b>Доставка:</b>
+                    <span class="cart-table-del-item">
             <input type="radio" checked id="rad1" name="delrad">
             <label for="rad1">по Москве</label>
           </span>
-          <span class="cart-table-del-item">
+                    <span class="cart-table-del-item">
             <input type="radio" id="rad2" name="delrad">
             <label for="rad2">по России</label>
           </span>
+                </div>
+
+                <div class="cart-table-summ-value">
+                    <span>Итого:</span>
+                    <span class="prod-cart-price">3 520 <i class="rubl">₽</i></span>
+                </div>
+            </div>
         </div>
 
-        <div class="cart-table-summ-value">
-          <span>Итого:</span>
-          <span class="prod-cart-price">3 520 <i class="rubl">₽</i></span>
+        <div class="modal-contacts-form">
+            <form action="#">
+                <div class="form-group">
+                    <label for="inputName">Ваше имя</label>
+                    <div class="icon-input">
+                        <i class="icon icon-user-input"></i>
+                        <input type="text" placeholder="ВАШЕ ИМЯ" id="inputName">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPhone">Ваш телефон</label>
+                    <div class="icon-input">
+                        <i class="icon icon-phone-input"></i>
+                        <input type="text" placeholder="+7" id="inputPhone" class="mask-phone">
+                    </div>
+                </div>
+                <button class="btn" type="submit">ОФОРМИТЬ ЗАКАЗ</button>
+            </form>
         </div>
-      </div>
     </div>
 
-    <div class="modal-contacts-form">
-      <form action="#">
-        <div class="form-group">
-          <label for="inputName">Ваше имя</label>
-          <div class="icon-input">
-            <i class="icon icon-user-input"></i>
-            <input type="text" placeholder="ВАШЕ ИМЯ" id="inputName">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputPhone">Ваш телефон</label>
-          <div class="icon-input">
-            <i class="icon icon-phone-input"></i>
-            <input type="text" placeholder="+7" id="inputPhone" class="mask-phone">
-          </div>
-        </div>
-        <button class="btn" type="submit">ОФОРМИТЬ ЗАКАЗ</button>
-      </form>
-    </div>
-  </div>
 
+    <!-- header -->
+    <header id="header" class="header header-main">
+        <div class="head-panel hidden-devices">
+            <div class="container group">
+                <div class="head-city">
+                    <div class="head-city-active">
+                        <i class="icon icon-location"></i>
+                        <span>Москва</span>
+                    </div>
+                    <div class="head-city-list">
+                        <span class="head-city-item"><a href="#">Санкт-Петербург</a></span>
+                    </div>
+                </div>
 
-  <!-- header -->
-  <header id="header" class="header header-main">
-    <div class="head-panel hidden-devices">
-      <div class="container group">
-        <div class="head-city">
-          <div class="head-city-active">
-            <i class="icon icon-location"></i>
-            <span>Москва</span>
-          </div>
-          <div class="head-city-list">
-            <span class="head-city-item"><a href="#">Санкт-Петербург</a></span>
-          </div>
+                <div class="head-nav">
+                    <a href="#">О компании</a>
+                    <a href="#">Гарантии и возврат</a>
+                    <a href="#">Отзывы</a>
+                    <a href="#">Доставка и оплата</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Интересное</a>
+                </div>
+            </div>
         </div>
 
+        <div class="container group">
+            <div class="header-wrapper">
+                <div class="logo-wrapper">
+                    <div class="logo"><a href="#"><img src="img/newbalances/header-logo.png" alt=""></a></div>
+                    <div class="head-slogan">
+                        Дисконт-центр <br>
+                        оригинальных кроссовок <br>
+                        New Balance
+                    </div>
+                </div>
 
-        <div class="head-nav">
-          <a href="#">О компании</a>
-          <a href="#">Гарантии и возврат</a>
-          <a href="#">Отзывы</a>
-          <a href="#">Доставка и оплата</a>
-          <a href="#">FAQ</a>
-          <a href="#">Интересное</a>
-        </div>
-      </div>
-    </div>
+                <div class="header-inner-info">
+                    <div class="header-contacts-panel hidden-devices">
 
-    <div class="container group">
-      <div class="logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
-
-      <div class="header-inner-info">
-        <div class="header-contacts-panel hidden-devices">
-          <div class="head-slogan">Дисконт-центр оригинальных Nike Air Max</div>
-          <div class="head-delivery-info">Доставка по Москве и РФ</div>
-          <div class="head-work">Работаем ежедневно, без выходных <span>10.00 - 21.00</span></div>
-          <div class="head-phone">
-            <span class="head-number"><span>8 (499)</span> 110-51-49</span>
-            <a href="#callModal" class="open-popup-link">Перезвоните мне</a>
-          </div>
-        </div>
+                        <div class="head-delivery-info">Доставка по Москве и РФ</div>
+                        <div class="head-work">Работаем ежедневно, без выходных <span>10.00 - 21.00</span></div>
+                        <div class="head-phone">
+                            <span class="head-number"><span>8 (499)</span> 110-51-49</span>
+                            <a href="#callModal" class="open-popup-link">Перезвоните мне</a>
+                        </div>
+                    </div>
 
 
-        <div class="head-menu">
-          <div class="menu-icon-wrap">
-            <span class="menu-icon">
-              <span></span>
-            </span>
-          </div>
+                    <div class="head-menu">
+                        <div class="menu-icon-wrap">
+                            <span class="menu-icon">
+                              <span></span>
+                            </span>
+                        </div>
 
-          <div class="menu-wrapper-fixed">
-            <div class="menu-open-wrapper">
+                        <div class="menu-wrapper-fixed">
+                            <div class="menu-open-wrapper">
 
-              <nav class="header-nav">
-                <ul class="menu">
-                  <li class="menu-sale">
-                    <a href="#">
-                      <i class="icon icon-fire"></i>
-                      <span>SALE</span>
+                                <nav class="header-nav">
+                                    <ul class="menu">
+                                        <li class="menu-sale">
+                                            <a href="#">
+                                                <i class="icon icon-fire"></i>
+                                                <span>SALE</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">мУЖСКИЕ</a></li>
+                                        <li><a href="#">Женские</a></li>
+                                        <li><a href="#">Air Max 2017</a></li>
+                                        <li><a href="#">Air Max 95</a></li>
+                                        <li><a href="#">Air Max 90</a></li>
+                                    </ul>
+                                </nav>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-form">
+                    <form action="#">
+                        <div class="search-inner">
+                            <input type="text" placeholder="Поиск">
+                            <span class="search-close"></span>
+                        </div>
+                        <span class="search-btn"></span>
+                    </form>
+                </div>
+
+                <div class="mobile-call hidden-desktop">
+                    <a href="tel:+374658294556387">
+                        <i class="icon icon-phone"></i>
                     </a>
-                  </li>
-                  <li><a href="#">мУЖСКИЕ</a></li>
-                  <li><a href="#">Женские</a></li>
-                  <li><a href="#">Air Max 2017</a></li>
-                  <li><a href="#">Air Max 95</a></li>
-                  <li><a href="#">Air Max 90</a></li>
-                </ul>
-              </nav>
+                </div>
 
+                <div class="head-cart">
+                    <a href="#cartModal" class="head-cart-link open-popup-link">
+                        <i class="icon icon-cart"></i>
+                        <span class="head-cart-value">0</span>
+                    </a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </header>
+    <!-- end header -->
 
-      <div class="search-form">
-        <form action="#">
-          <div class="search-inner">
-            <input type="text" placeholder="Поиск">
-            <span class="search-close"></span>
-          </div>
-          <span class="search-btn"></span>
-        </form>
-      </div>
+    <!--middle-->
+    <section id="middle">
 
-      <div class="mobile-call hidden-desktop">
-        <a href="tel:+374658294556387">
-          <i class="icon icon-phone"></i>
-        </a>
-      </div>
-
-      <div class="head-cart">
-        <a href="#cartModal" class="head-cart-link open-popup-link">
-          <i class="icon icon-cart"></i>
-          <span class="head-cart-value">0</span>
-        </a>
-      </div>
-    </div>
-  </header>
-  <!-- end header -->
-
-
-  <section id="middle">
-
-    <div class="main-banner">
-      <div class="container">
-        <div class="main-banner-flex">
-          <div class="main-banner__left-side">
-            <div class="main-banner__title">
-              <p class="mob-fz-22 font-size-33 text-uppercase text-white line-height-1 font-proxima-nova-bold">Оригинальные кроссовки <br><span class="text-red">New Balance</span> в магазине <br> в центре Москвы</p>
-            </div>
-            <div class="main-banner-discount-mobile">
-              <span class="main-banner-discount-mobile__text">-60%</span>
-              <span class="main-banner-discount-mobile__text">Только <span class="jqs-future-data">20 сентября</span></span>
-            </div>
-            <div class="main-banner__text-middle mb50 mob-mb-30">
-              <p class="icon-wrapper mb20"><i class="icon-newbalance"></i></p>
-              <p class="text-center font-size-18 text-uppercase text-white"><b>Более 200 моделей <br> любого размера в наличии</b></p>
-            </div>
-            <div class="main-banner__exclamation">
-              <p class="font-size-16 text-white">Работаем с 2007 года</p>
-              <p class="font-size-16 text-white">Более 50 000 довольных клиентов</p>
-            </div>
-          </div>
-          <div class="main-banner__right-side">
-            <div class="main-banner__sneaker">
-              <img class="main-banner__sneaker-image" src="img/newbalances/image-sneaker.png" alt="">
-            </div>
-            <div class="main-banner__discount">
-              <div class="main-banner-discount-flex">
-                <span class="main-banner__discount-value">-60</span>
-                <span class="main-banner__discount-percent">%</span>
-              </div>
-              <div class="main-banner-subdiscount-text">
-                <div class="main-banner-only-for">
-                  <p class="font-size-20 text-white text-uppercase text-center mb30">Только до <span class="jqs-future-date">20 сентября</span></p>
-                  <p class="text-center"><a class="button button_brown" href="#">К скидкам</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="triggers">
-      <div class="container">
-        <div class="triggers-flex">
-          <div class="trigger-item">
-            <div class="trigger-item__icon">
-              <i class="icon-trigger-official-distributor"></i>
-            </div>
-            <p class="trigger-item__text">Официальный поставщик <br> New Balance</p>
-          </div>
-          <div class="trigger-item">
-            <div class="trigger-item__icon">
-              <i class="icon-trigger-guarantee"></i>
-            </div>
-            <p class="trigger-item__text">Гарантия <br> 60 дней</p>
-          </div>
-          <div class="trigger-item">
-            <div class="trigger-item__icon">
-              <i class="icon-trigger-7-pairs"></i>
-            </div>
-            <p class="trigger-item__text">Привезём до 7 пар <br> на примерку</p>
-          </div>
-          <div class="trigger-item">
-            <div class="trigger-item__icon">
-              <i class="icon-trigger-delivery"></i>
-            </div>
-            <p class="trigger-item__text">Доставка <br> по Москве за 24 часа</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="main-content">
-      <div class="container">
-        <div class="main-content__flex">
-
-          <div class="main-content__sidebar">
-            <div class="main-filter">
-              <div class="main-filter__section">
-                <p class="main-filter-text main-filter-text__title">Пол</p>
-                <div class="main-filter__items main-filter__items_is-column">
-                  <a href="#" class="main-filter-text main-filter-text__link main-filter-text__link_is-active">
-                    <span class="main-filter__item-name">Мужской</span>
-                    <span class="main-filter__item-count">(230)</span>
-                  </a>
-                  <a href="#" class="main-filter-text main-filter-text__link">
-                    <span class="main-filter__item-name">Женский</span>
-                    <span class="main-filter__item-count">(160)</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="main-filter">
-              <div class="main-filter__section">
-                <p class="main-filter-text main-filter-text__title">Модель</p>
-                <div class="main-filter__items main-filter__items_is-column">
-                  <a href="#" class="main-filter-text main-filter-text__link">
-                    <span class="main-filter__item-name">New Balance 420</span>
-                  </a>
-                  <a href="#" class="main-filter-text main-filter-text__link">
-                    <span class="main-filter__item-name">New Balance 288</span>
-                  </a>
-                  <a href="#" class="main-filter-text main-filter-text__link">
-                    <span class="main-filter__item-name">New Balance 530</span>
-                  </a>
-                  <a href="#" class="main-filter-text main-filter-text__link">
-                    <span class="main-filter__item-name">New Balance 574</span>
-                  </a>
-                  <a href="#" class="main-filter-text main-filter-text__link">
-                    <span class="main-filter__item-name">New Balance 577</span>
-                  </a>
-                  <a href="#" class="main-filter-text main-filter-text__link">
-                    <span class="main-filter__item-name">New Balance 580</span>
-                  </a>
-                  <a href="#" class="main-filter-text main-filter-text__link">
-                    <span class="main-filter__item-name">New Balance 670</span>
-                  </a>
-                  <a href="#" class="main-filter-text main-filter-text__link">
-                    <span class="main-filter__item-name">New Balance 754</span>
-                  </a>
-                  <a href="#" class="main-filter-text main-filter-text__link">
-                    <span class="main-filter__item-name">New Balance 990</span>
-                  </a>
-                  <a href="#" class="main-filter-text main-filter-text__link">
-                    <span class="main-filter__item-name">New Balance 996</span>
-                  </a>
-                  <a href="#" class="main-filter-text main-filter-text__link">
-                    <span class="main-filter__item-name">New Balance 997</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="main-filter">
-              <div class="main-filter__section">
-                <p class="main-filter-text main-filter-text__title">Модель</p>
-                <div class="main-filter-colors">
-                  <div class="main-filter-colors__wrapper">
-                    <a href="#" class="main-filter-colors__color" style="background-color: #808080;"></a>
-                  </div>
-                  <div class="main-filter-colors__wrapper">
-                    <a href="#" class="main-filter-colors__color" style="background-color: #964b00;"></a>
-                  </div>
-                  <div class="main-filter-colors__wrapper">
-                    <a href="#" class="main-filter-colors__color" style="background-color: #42aaff;"></a>
-                  </div>
-                  <div class="main-filter-colors__wrapper">
-                    <a href="#" class="main-filter-colors__color" style="background-color: #f9ce43;"></a>
-                  </div>
-                  <div class="main-filter-colors__wrapper">
-                    <a href="#" class="main-filter-colors__color" style="background-color: #9b2d30;"></a>
-                  </div>
-                  <div class="main-filter-colors__wrapper">
-                    <a href="#" class="main-filter-colors__color" style="background-color: #c28ada;"></a>
-                  </div>
-                  <div class="main-filter-colors__wrapper">
-                    <a href="#" class="main-filter-colors__color" style="background-color: #ffc0cb;"></a>
-                  </div>
-                  <div class="main-filter-colors__wrapper">
-                    <a href="#" class="main-filter-colors__color" style="background-color: #1c1c1c;"></a>
-                  </div>
-                  <div class="main-filter-colors__wrapper">
-                    <a href="#" class="main-filter-colors__color" style="background-color: #9e9764;"></a>
-                  </div>
-                  <div class="main-filter-colors__wrapper">
-                    <a href="#" class="main-filter-colors__color" style="background-color: #ffffff;"></a>
-                  </div>
-                  <div class="main-filter-colors__wrapper">
-                    <a href="#" class="main-filter-colors__color" style="background-color: #8d42a1;"></a>
-                  </div>
-                  <div class="main-filter-colors__wrapper">
-                    <a href="#" class="main-filter-colors__color" style="background-color: #5eb226;"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="main-filter">
-              <div class="main-filter__section">
-                <p class="main-filter-text main-filter-text__title">Сезонность</p>
-                <div class="main-filter__items main-filter__items_is-column">
-                  <a href="#" class="main-filter-text main-filter-text__link">
-                    <span class="main-filter__item-name">Весна</span>
-                    <span class="main-filter__item-count">(140)</span>
-                  </a>
-                  <a href="#" class="main-filter-text main-filter-text__link">
-                    <span class="main-filter__item-name">Лето</span>
-                    <span class="main-filter__item-count">(132)</span>
-                  </a>
-                  <a href="#" class="main-filter-text main-filter-text__link">
-                    <span class="main-filter__item-name">Осень</span>
-                    <span class="main-filter__item-count">(118)</span>
-                  </a>
-                  <a href="#" class="main-filter-text main-filter-text__link">
-                    <span class="main-filter__item-name">Зима</span>
-                    <span class="main-filter__item-count">(56)</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="main-filter">
-              <div class="main-filter__section">
-                <p class="main-filter-text main-filter-text__title">Размер (RUS)</p>
-                <div class="main-filter-sizes">
-                  <div class="main-filter-sizes__wrapper">
-                    <a href="#" class="main-filter-sizes__size">35.5</a>
-                  </div>
-                  <div class="main-filter-sizes__wrapper">
-                    <a href="#" class="main-filter-sizes__size main-filter-sizes__size_is-active">36</a>
-                  </div>
-                  <div class="main-filter-sizes__wrapper">
-                    <a href="#" class="main-filter-sizes__size">36.5</a>
-                  </div>
-                  <div class="main-filter-sizes__wrapper">
-                    <a href="#" class="main-filter-sizes__size">37</a>
-                  </div>
-                  <div class="main-filter-sizes__wrapper">
-                    <a href="#" class="main-filter-sizes__size">37.5</a>
-                  </div>
-                  <div class="main-filter-sizes__wrapper">
-                    <a href="#" class="main-filter-sizes__size">38</a>
-                  </div>
-                  <div class="main-filter-sizes__wrapper">
-                    <a href="#" class="main-filter-sizes__size">38.5</a>
-                  </div>
-                  <div class="main-filter-sizes__wrapper">
-                    <a href="#" class="main-filter-sizes__size">39</a>
-                  </div>
-                  <div class="main-filter-sizes__wrapper">
-                    <a href="#" class="main-filter-sizes__size">39.5</a>
-                  </div>
-                  <div class="main-filter-sizes__wrapper">
-                    <a href="#" class="main-filter-sizes__size">40</a>
-                  </div>
-                  <div class="main-filter-sizes__wrapper">
-                    <a href="#" class="main-filter-sizes__size">40.5</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="main-filter">
-            <div class="main-filter__section">
-              <p class="main-filter-text main-filter-text__title">Материал</p>
-              <div class="main-filter__items main-filter__items_is-column">
-                <a href="#" class="main-filter-text main-filter-text__link">
-                  <span class="main-filter__item-name">Замша</span>
-                  <span class="main-filter__item-count">(48)</span>
-                </a>
-                <a href="#" class="main-filter-text main-filter-text__link">
-                  <span class="main-filter__item-name">Кожа</span>
-                  <span class="main-filter__item-count">(32)</span>
-                </a>
-                <a href="#" class="main-filter-text main-filter-text__link">
-                  <span class="main-filter__item-name">Мех</span>
-                  <span class="main-filter__item-count">(18)</span>
-                </a>
-                <a href="#" class="main-filter-text main-filter-text__link">
-                  <span class="main-filter__item-name">Синтетика</span>
-                  <span class="main-filter__item-count">(56)</span>
-                </a>
-                <a href="#" class="main-filter-text main-filter-text__link">
-                  <span class="main-filter__item-name">Ткань</span>
-                  <span class="main-filter__item-count">(25)</span>
-                </a>
-                <a href="#" class="main-filter-text main-filter-text__link">
-                  <span class="main-filter__item-name">Нубук</span>
-                  <span class="main-filter__item-count">(18)</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          </div>
-
-          <div class="main-content__base">
-
-            <div class="main-content-banner">
-              <div class="main-content-banner__image main-content-banner__image_men">
-                <div class="main-content-banner__content">
-                  <div class="main-content-banner__left-side">
-                    <div class="main-content-banner__title">
-                      <span class="text-red">Мужские</span><br>
-                      <span class="text-white">New Balance</span>
+        <div class="main-banner">
+            <div class="container">
+                <div class="main-banner-flex">
+                    <div class="main-banner__left-side">
+                        <div class="main-banner__title">
+                            <p class="mob-fz-22 font-size-33 text-uppercase text-white line-height-1 font-proxima-nova-bold">
+                                Оригинальные кроссовки <br><span class="text-red">New Balance</span> в магазине <br> в
+                                центре Москвы</p>
+                        </div>
+                        <div class="main-banner-discount-mobile">
+                            <span class="main-banner-discount-mobile__text">-60%</span>
+                            <span class="main-banner-discount-mobile__text">Только <span class="jqs-future-data">20 сентября</span></span>
+                        </div>
+                        <div class="main-banner__text-middle mb50">
+                            <p class="icon-wrapper mb20"><i class="icon-newbalance"></i></p>
+                            <p class="text-center font-size-18 text-uppercase text-white"><b>Более 200 моделей <br>
+                                любого размера в наличии</b></p>
+                        </div>
+                        <div class="main-banner__exclamation">
+                            <p class="font-size-16 text-white">Работаем с 2007 года</p>
+                            <p class="font-size-16 text-white">Более 50 000 довольных клиентов</p>
+                        </div>
                     </div>
-                    <p class="main-content-banner__descr">Сегодня купить кроссовки NEW BALANCE можно по невысокой цене довольно легко. Если изначально обувь производилась в качестве ортопедической, то после бума 70-х компания NEW BALANCE изготавливает кеды только для спортсменов, особенно бегунов</p>
-                  </div>
-                  <div class="main-content-banner__right-side">
-                    <p><a class= "button button_red" href="#">Перейти в каталог</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="main-content-products-list">
-              <div class="main-content-products-list__grid">
-                <div class="products-list-item">
-                  <div class="products-list-item__discount">-67%</div>
-                  <div class="products-list-item__image-wrapper">
-                    <img class="products-list-item__image" src="img/newbalances/sneaker-1.png" alt="">
-                  </div>
-                  <p class="products-list-item__button text-center products-list-item__button_is-invisible"><a class="button button_red button__product-list" href="#">Купить сейчас</a></p>
-                  <div class="products-list-item__line"></div>
-                  <div class="products-list-item__sizes products-list-item__sizes_is-invisible">
-                    <span class="products-list-item__size">37</span>
-                    <span class="products-list-item__size">38</span>
-                    <span class="products-list-item__size">39</span>
-                    <span class="products-list-item__size">40</span>
-                    <span class="products-list-item__size">41</span>
-                  </div>
-                  <p class="products-list-item__name">New Balance 574 Brown/White</p>
-                  <p class="products-list-item__type">Повседневная</p>
-                  <div class="products-list-item__price">
-                    <span class="products-list-item__new-price">3 790</span>
-                    <span class="products-list-item__old-price">7 890 руб.</span>
-                  </div>
-                </div>
-                <div class="products-list-item">
-                  <div class="products-list-item__discount">-67%</div>
-                  <div class="products-list-item__image-wrapper">
-                    <img class="products-list-item__image" src="img/newbalances/sneaker-2.png" alt="">
-                  </div>
-                  <p class="products-list-item__button text-center products-list-item__button_is-invisible"><a class="button button_red button__product-list" href="#">Купить сейчас</a></p>
-                  <div class="products-list-item__line"></div>
-                  <div class="products-list-item__sizes products-list-item__sizes_is-invisible">
-                    <span class="products-list-item__size">37</span>
-                    <span class="products-list-item__size">38</span>
-                    <span class="products-list-item__size">39</span>
-                    <span class="products-list-item__size">40</span>
-                    <span class="products-list-item__size">41</span>
-                  </div>
-                  <p class="products-list-item__name">New Balance 574 Brown/White</p>
-                  <p class="products-list-item__type">Повседневная</p>
-                  <div class="products-list-item__price">
-                    <span class="products-list-item__new-price">3 790</span>
-                    <span class="products-list-item__old-price">7 890 руб.</span>
-                  </div>
-                </div>
-                <div class="products-list-item">
-                <div class="products-list-item__discount">-67%</div>
-                <div class="products-list-item__image-wrapper">
-                  <img class="products-list-item__image" src="img/newbalances/sneaker-3.png" alt="">
-                </div>
-                <p class="products-list-item__button text-center products-list-item__button_is-invisible"><a class="button button_red button__product-list" href="#">Купить сейчас</a></p>
-                <div class="products-list-item__line"></div>
-                <div class="products-list-item__sizes products-list-item__sizes_is-invisible">
-                  <span class="products-list-item__size">37</span>
-                  <span class="products-list-item__size">38</span>
-                  <span class="products-list-item__size">39</span>
-                  <span class="products-list-item__size">40</span>
-                  <span class="products-list-item__size">41</span>
-                </div>
-                <p class="products-list-item__name">New Balance 574 Brown/White</p>
-                <p class="products-list-item__type">Повседневная</p>
-                <div class="products-list-item__price">
-                  <span class="products-list-item__new-price">3 790</span>
-                  <span class="products-list-item__old-price">7 890 руб.</span>
-                </div>
-              </div>
-              </div>
-              <p class="text-center mb70"><a href="#" class="button button_white button__go-to-catalog">Перейти в каталог</a></p>
-            </div>
-
-            <div class="main-content-banner">
-              <div class="main-content-banner__image main-content-banner__image_women">
-                <div class="main-content-banner__content">
-                  <div class="main-content-banner__left-side">
-                    <div class="main-content-banner__title">
-                      <span class="text-red">Мужские</span><br>
-                      <span class="text-white">New Balance</span>
+                    <div class="main-banner__right-side">
+                        <div class="main-banner__sneaker">
+                            <img class="main-banner__sneaker-image" src="img/newbalances/image-sneaker.png" alt="">
+                        </div>
+                        <div class="main-banner__discount">
+                            <div class="main-banner-discount-flex">
+                                <span class="main-banner__discount-value">-60</span>
+                                <span class="main-banner__discount-percent">%</span>
+                            </div>
+                            <div class="main-banner-subdiscount-text">
+                                <div class="main-banner-only-for">
+                                    <p class="font-size-20 text-white text-uppercase text-center mb30">Только до <span
+                                            class="jqs-future-date">20 сентября</span></p>
+                                    <p class="text-center"><a class="button button_brown" href="#">К скидкам</a></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="main-content-banner__descr">Сегодня купить кроссовки NEW BALANCE можно по невысокой цене довольно легко. Если изначально обувь производилась в качестве ортопедической, то после бума 70-х компания NEW BALANCE изготавливает кеды только для спортсменов, особенно бегунов</p>
-                  </div>
-                  <div class="main-content-banner__right-side">
-                    <p><a class= "button button_red" href="#">Перейти в каталог</a></p>
-                  </div>
                 </div>
-              </div>
             </div>
-
-            <div class="main-content-products-list">
-              <div class="main-content-products-list__grid">
-                <div class="products-list-item">
-                  <div class="products-list-item__discount">-67%</div>
-                  <div class="products-list-item__image-wrapper">
-                    <img class="products-list-item__image" src="img/newbalances/sneaker-4.png" alt="">
-                  </div>
-                  <p class="products-list-item__button text-center products-list-item__button_is-invisible"><a class="button button_red button__product-list" href="#">Купить сейчас</a></p>
-                  <div class="products-list-item__line"></div>
-                  <div class="products-list-item__sizes products-list-item__sizes_is-invisible">
-                    <span class="products-list-item__size">37</span>
-                    <span class="products-list-item__size">38</span>
-                    <span class="products-list-item__size">39</span>
-                    <span class="products-list-item__size">40</span>
-                    <span class="products-list-item__size">41</span>
-                  </div>
-                  <p class="products-list-item__name">New Balance 574 Brown/White</p>
-                  <p class="products-list-item__type">Повседневная</p>
-                  <div class="products-list-item__price">
-                    <span class="products-list-item__new-price">3 790</span>
-                    <span class="products-list-item__old-price">7 890 руб.</span>
-                  </div>
-                </div>
-                <div class="products-list-item">
-                  <div class="products-list-item__discount">-67%</div>
-                  <div class="products-list-item__image-wrapper">
-                    <img class="products-list-item__image" src="img/newbalances/sneaker-5.png" alt="">
-                  </div>
-                  <p class="products-list-item__button text-center products-list-item__button_is-invisible"><a class="button button_red button__product-list" href="#">Купить сейчас</a></p>
-                  <div class="products-list-item__line"></div>
-                  <div class="products-list-item__sizes products-list-item__sizes_is-invisible">
-                    <span class="products-list-item__size">37</span>
-                    <span class="products-list-item__size">38</span>
-                    <span class="products-list-item__size">39</span>
-                    <span class="products-list-item__size">40</span>
-                    <span class="products-list-item__size">41</span>
-                  </div>
-                  <p class="products-list-item__name">New Balance 574 Brown/White</p>
-                  <p class="products-list-item__type">Повседневная</p>
-                  <div class="products-list-item__price">
-                    <span class="products-list-item__new-price">3 790</span>
-                    <span class="products-list-item__old-price">7 890 руб.</span>
-                  </div>
-                </div>
-                <div class="products-list-item">
-                <div class="products-list-item__discount">-67%</div>
-                <div class="products-list-item__image-wrapper">
-                  <img class="products-list-item__image" src="img/newbalances/sneaker-6.png" alt="">
-                </div>
-                <p class="products-list-item__button text-center products-list-item__button_is-invisible"><a class="button button_red button__product-list" href="#">Купить сейчас</a></p>
-                <div class="products-list-item__line"></div>
-                <div class="products-list-item__sizes products-list-item__sizes_is-invisible">
-                  <span class="products-list-item__size">37</span>
-                  <span class="products-list-item__size">38</span>
-                  <span class="products-list-item__size">39</span>
-                  <span class="products-list-item__size">40</span>
-                  <span class="products-list-item__size">41</span>
-                </div>
-                <p class="products-list-item__name">New Balance 574 Brown/White</p>
-                <p class="products-list-item__type">Повседневная</p>
-                <div class="products-list-item__price">
-                  <span class="products-list-item__new-price">3 790</span>
-                  <span class="products-list-item__old-price">7 890 руб.</span>
-                </div>
-              </div>
-              </div>
-              <p class="text-center mb70"><a href="#" class="button button_white button__go-to-catalog">Перейти в каталог</a></p>
-            </div>
-
-          </div>
-
         </div>
-      </div>
-    </div>
 
-    <div class="main-content-address">
-      <div class="container">
-        <div class="main-content-address__flex">
+        <div class="triggers">
+            <div class="container">
+                <div class="triggers-flex">
+                    <div class="trigger-item">
+                        <div class="trigger-item__icon">
+                            <i class="icon-trigger-official-distributor"></i>
+                        </div>
+                        <p class="trigger-item__text">Официальный поставщик <br> New Balance</p>
+                    </div>
+                    <div class="trigger-item">
+                        <div class="trigger-item__icon">
+                            <i class="icon-trigger-guarantee"></i>
+                        </div>
+                        <p class="trigger-item__text">Гарантия <br> 60 дней</p>
+                    </div>
+                    <div class="trigger-item">
+                        <div class="trigger-item__icon">
+                            <i class="icon-trigger-7-pairs"></i>
+                        </div>
+                        <p class="trigger-item__text">Привезём до 7 пар <br> на примерку</p>
+                    </div>
+                    <div class="trigger-item">
+                        <div class="trigger-item__icon">
+                            <i class="icon-trigger-delivery"></i>
+                        </div>
+                        <p class="trigger-item__text">Доставка <br> по Москве за 24 часа</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-          <div class="main-content-address__left-side">
-            <div class="main-content-address-contacts">
-              <div class="main-content-address-contacts__left-side">
-                <p class="main-content-address-contacts__title">
-                  Магазин <br>
-                  в центре Москвы
-                </p>
-                <div class="main-content-address-contacts__address">
+        <div class="main-content">
+            <div class="container">
+                <div class="main-content__flex">
+
+                    <div class="main-filter-open js-open-filter desktop-hidden">
+                        <span class="main-filter-open__button">Открыть</span>
+                    </div>
+                    <div class="main-content__sidebar js-filter closed">
+                        <div class="main-filter">
+                            <div class="main-filter__section">
+                                <p class="main-filter-text main-filter-text__title">Пол</p>
+                                <div class="main-filter__items main-filter__items_is-column">
+                                    <a href="#"
+                                       class="main-filter-text main-filter-text__link main-filter-text__link_is-active">
+                                        <span class="main-filter__item-name">Мужской</span>
+                                        <span class="main-filter__item-count">(230)</span>
+                                    </a>
+                                    <a href="#" class="main-filter-text main-filter-text__link">
+                                        <span class="main-filter__item-name">Женский</span>
+                                        <span class="main-filter__item-count">(160)</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-filter">
+                            <div class="main-filter__section">
+                                <p class="main-filter-text main-filter-text__title">Модель</p>
+                                <div class="main-filter__items main-filter__items_is-column">
+                                    <a href="#" class="main-filter-text main-filter-text__link">
+                                        <span class="main-filter__item-name">New Balance 420</span>
+                                    </a>
+                                    <a href="#" class="main-filter-text main-filter-text__link">
+                                        <span class="main-filter__item-name">New Balance 288</span>
+                                    </a>
+                                    <a href="#" class="main-filter-text main-filter-text__link">
+                                        <span class="main-filter__item-name">New Balance 530</span>
+                                    </a>
+                                    <a href="#" class="main-filter-text main-filter-text__link">
+                                        <span class="main-filter__item-name">New Balance 574</span>
+                                    </a>
+                                    <a href="#" class="main-filter-text main-filter-text__link">
+                                        <span class="main-filter__item-name">New Balance 577</span>
+                                    </a>
+                                    <a href="#" class="main-filter-text main-filter-text__link">
+                                        <span class="main-filter__item-name">New Balance 580</span>
+                                    </a>
+                                    <a href="#" class="main-filter-text main-filter-text__link">
+                                        <span class="main-filter__item-name">New Balance 670</span>
+                                    </a>
+                                    <a href="#" class="main-filter-text main-filter-text__link">
+                                        <span class="main-filter__item-name">New Balance 754</span>
+                                    </a>
+                                    <a href="#" class="main-filter-text main-filter-text__link">
+                                        <span class="main-filter__item-name">New Balance 990</span>
+                                    </a>
+                                    <a href="#" class="main-filter-text main-filter-text__link">
+                                        <span class="main-filter__item-name">New Balance 996</span>
+                                    </a>
+                                    <a href="#" class="main-filter-text main-filter-text__link">
+                                        <span class="main-filter__item-name">New Balance 997</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-filter">
+                            <div class="main-filter__section">
+                                <p class="main-filter-text main-filter-text__title">Модель</p>
+                                <div class="main-filter-colors">
+                                    <div class="main-filter-colors__wrapper">
+                                        <a href="#" class="main-filter-colors__color"
+                                           style="background-color: #808080;"></a>
+                                    </div>
+                                    <div class="main-filter-colors__wrapper">
+                                        <a href="#" class="main-filter-colors__color"
+                                           style="background-color: #964b00;"></a>
+                                    </div>
+                                    <div class="main-filter-colors__wrapper">
+                                        <a href="#" class="main-filter-colors__color"
+                                           style="background-color: #42aaff;"></a>
+                                    </div>
+                                    <div class="main-filter-colors__wrapper">
+                                        <a href="#" class="main-filter-colors__color"
+                                           style="background-color: #f9ce43;"></a>
+                                    </div>
+                                    <div class="main-filter-colors__wrapper">
+                                        <a href="#" class="main-filter-colors__color"
+                                           style="background-color: #9b2d30;"></a>
+                                    </div>
+                                    <div class="main-filter-colors__wrapper">
+                                        <a href="#" class="main-filter-colors__color"
+                                           style="background-color: #c28ada;"></a>
+                                    </div>
+                                    <div class="main-filter-colors__wrapper">
+                                        <a href="#" class="main-filter-colors__color"
+                                           style="background-color: #ffc0cb;"></a>
+                                    </div>
+                                    <div class="main-filter-colors__wrapper">
+                                        <a href="#" class="main-filter-colors__color"
+                                           style="background-color: #1c1c1c;"></a>
+                                    </div>
+                                    <div class="main-filter-colors__wrapper">
+                                        <a href="#" class="main-filter-colors__color"
+                                           style="background-color: #9e9764;"></a>
+                                    </div>
+                                    <div class="main-filter-colors__wrapper">
+                                        <a href="#" class="main-filter-colors__color"
+                                           style="background-color: #ffffff;"></a>
+                                    </div>
+                                    <div class="main-filter-colors__wrapper">
+                                        <a href="#" class="main-filter-colors__color"
+                                           style="background-color: #8d42a1;"></a>
+                                    </div>
+                                    <div class="main-filter-colors__wrapper">
+                                        <a href="#" class="main-filter-colors__color"
+                                           style="background-color: #5eb226;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-filter">
+                            <div class="main-filter__section">
+                                <p class="main-filter-text main-filter-text__title">Сезонность</p>
+                                <div class="main-filter__items main-filter__items_is-column">
+                                    <a href="#" class="main-filter-text main-filter-text__link">
+                                        <span class="main-filter__item-name">Весна</span>
+                                        <span class="main-filter__item-count">(140)</span>
+                                    </a>
+                                    <a href="#" class="main-filter-text main-filter-text__link">
+                                        <span class="main-filter__item-name">Лето</span>
+                                        <span class="main-filter__item-count">(132)</span>
+                                    </a>
+                                    <a href="#" class="main-filter-text main-filter-text__link">
+                                        <span class="main-filter__item-name">Осень</span>
+                                        <span class="main-filter__item-count">(118)</span>
+                                    </a>
+                                    <a href="#" class="main-filter-text main-filter-text__link">
+                                        <span class="main-filter__item-name">Зима</span>
+                                        <span class="main-filter__item-count">(56)</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-filter">
+                            <div class="main-filter__section">
+                                <p class="main-filter-text main-filter-text__title">Размер (RUS)</p>
+                                <div class="main-filter-sizes">
+                                    <div class="main-filter-sizes__wrapper">
+                                        <a href="#" class="main-filter-sizes__size">35.5</a>
+                                    </div>
+                                    <div class="main-filter-sizes__wrapper">
+                                        <a href="#"
+                                           class="main-filter-sizes__size main-filter-sizes__size_is-active">36</a>
+                                    </div>
+                                    <div class="main-filter-sizes__wrapper">
+                                        <a href="#" class="main-filter-sizes__size">36.5</a>
+                                    </div>
+                                    <div class="main-filter-sizes__wrapper">
+                                        <a href="#" class="main-filter-sizes__size">37</a>
+                                    </div>
+                                    <div class="main-filter-sizes__wrapper">
+                                        <a href="#" class="main-filter-sizes__size">37.5</a>
+                                    </div>
+                                    <div class="main-filter-sizes__wrapper">
+                                        <a href="#" class="main-filter-sizes__size">38</a>
+                                    </div>
+                                    <div class="main-filter-sizes__wrapper">
+                                        <a href="#" class="main-filter-sizes__size">38.5</a>
+                                    </div>
+                                    <div class="main-filter-sizes__wrapper">
+                                        <a href="#" class="main-filter-sizes__size">39</a>
+                                    </div>
+                                    <div class="main-filter-sizes__wrapper">
+                                        <a href="#" class="main-filter-sizes__size">39.5</a>
+                                    </div>
+                                    <div class="main-filter-sizes__wrapper">
+                                        <a href="#" class="main-filter-sizes__size">40</a>
+                                    </div>
+                                    <div class="main-filter-sizes__wrapper">
+                                        <a href="#" class="main-filter-sizes__size">40.5</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-filter">
+                            <div class="main-filter__section">
+                                <p class="main-filter-text main-filter-text__title">Материал</p>
+                                <div class="main-filter__items main-filter__items_is-column">
+                                    <a href="#" class="main-filter-text main-filter-text__link">
+                                        <span class="main-filter__item-name">Замша</span>
+                                        <span class="main-filter__item-count">(48)</span>
+                                    </a>
+                                    <a href="#" class="main-filter-text main-filter-text__link">
+                                        <span class="main-filter__item-name">Кожа</span>
+                                        <span class="main-filter__item-count">(32)</span>
+                                    </a>
+                                    <a href="#" class="main-filter-text main-filter-text__link">
+                                        <span class="main-filter__item-name">Мех</span>
+                                        <span class="main-filter__item-count">(18)</span>
+                                    </a>
+                                    <a href="#" class="main-filter-text main-filter-text__link">
+                                        <span class="main-filter__item-name">Синтетика</span>
+                                        <span class="main-filter__item-count">(56)</span>
+                                    </a>
+                                    <a href="#" class="main-filter-text main-filter-text__link">
+                                        <span class="main-filter__item-name">Ткань</span>
+                                        <span class="main-filter__item-count">(25)</span>
+                                    </a>
+                                    <a href="#" class="main-filter-text main-filter-text__link">
+                                        <span class="main-filter__item-name">Нубук</span>
+                                        <span class="main-filter__item-count">(18)</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-content__base">
+
+                        <div class="main-content-banner">
+                            <div class="main-content-banner__image main-content-banner__image_men">
+                                <div class="main-content-banner__content">
+                                    <div class="main-content-banner__left-side">
+                                        <div class="main-content-banner__title">
+                                            <span class="text-red">Мужские</span><br>
+                                            <span class="text-white">New Balance</span>
+                                        </div>
+                                        <p class="main-content-banner__descr">Сегодня купить кроссовки NEW BALANCE можно
+                                            по невысокой цене довольно легко. Если изначально обувь производилась в
+                                            качестве ортопедической, то после бума 70-х компания NEW BALANCE
+                                            изготавливает кеды только для спортсменов, особенно бегунов</p>
+                                    </div>
+                                    <div class="main-content-banner__right-side">
+                                        <p><a class="button button_red" href="#">Перейти в каталог</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-content-products-list">
+                            <div class="main-content-products-list__grid">
+                                <div class="products-list-item">
+                                    <div class="products-list-item__discount">-67%</div>
+                                    <div class="products-list-item__image-wrapper">
+                                        <img class="products-list-item__image" src="img/newbalances/sneaker-1.png"
+                                             alt="">
+                                    </div>
+                                    <p class="products-list-item__button text-center products-list-item__button_is-invisible">
+                                        <a class="button button_red button__product-list" href="#">Купить сейчас</a></p>
+                                    <div class="products-list-item__line"></div>
+                                    <div class="products-list-item__sizes products-list-item__sizes_is-invisible">
+                                        <span class="products-list-item__size">37</span>
+                                        <span class="products-list-item__size">38</span>
+                                        <span class="products-list-item__size">39</span>
+                                        <span class="products-list-item__size">40</span>
+                                        <span class="products-list-item__size">41</span>
+                                    </div>
+                                    <p class="products-list-item__name">New Balance 574 Brown/White</p>
+                                    <p class="products-list-item__type">Повседневная</p>
+                                    <div class="products-list-item__price">
+                                        <span class="products-list-item__new-price">3 790</span>
+                                        <span class="products-list-item__old-price">7 890 руб.</span>
+                                    </div>
+                                </div>
+                                <div class="products-list-item">
+                                    <div class="products-list-item__discount">-67%</div>
+                                    <div class="products-list-item__image-wrapper">
+                                        <img class="products-list-item__image" src="img/newbalances/sneaker-2.png"
+                                             alt="">
+                                    </div>
+                                    <p class="products-list-item__button text-center products-list-item__button_is-invisible">
+                                        <a class="button button_red button__product-list" href="#">Купить сейчас</a></p>
+                                    <div class="products-list-item__line"></div>
+                                    <div class="products-list-item__sizes products-list-item__sizes_is-invisible">
+                                        <span class="products-list-item__size">37</span>
+                                        <span class="products-list-item__size">38</span>
+                                        <span class="products-list-item__size">39</span>
+                                        <span class="products-list-item__size">40</span>
+                                        <span class="products-list-item__size">41</span>
+                                    </div>
+                                    <p class="products-list-item__name">New Balance 574 Brown/White</p>
+                                    <p class="products-list-item__type">Повседневная</p>
+                                    <div class="products-list-item__price">
+                                        <span class="products-list-item__new-price">3 790</span>
+                                        <span class="products-list-item__old-price">7 890 руб.</span>
+                                    </div>
+                                </div>
+                                <div class="products-list-item">
+                                    <div class="products-list-item__discount">-67%</div>
+                                    <div class="products-list-item__image-wrapper">
+                                        <img class="products-list-item__image" src="img/newbalances/sneaker-3.png"
+                                             alt="">
+                                    </div>
+                                    <p class="products-list-item__button text-center products-list-item__button_is-invisible">
+                                        <a class="button button_red button__product-list" href="#">Купить сейчас</a></p>
+                                    <div class="products-list-item__line"></div>
+                                    <div class="products-list-item__sizes products-list-item__sizes_is-invisible">
+                                        <span class="products-list-item__size">37</span>
+                                        <span class="products-list-item__size">38</span>
+                                        <span class="products-list-item__size">39</span>
+                                        <span class="products-list-item__size">40</span>
+                                        <span class="products-list-item__size">41</span>
+                                    </div>
+                                    <p class="products-list-item__name">New Balance 574 Brown/White</p>
+                                    <p class="products-list-item__type">Повседневная</p>
+                                    <div class="products-list-item__price">
+                                        <span class="products-list-item__new-price">3 790 <i class="icon-rouble"></i></span>
+                                        <span class="products-list-item__old-price">7 890 руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-center mb70 mob-mb-30"><a href="#" class="button button_white button__go-to-catalog">Перейти
+                                в каталог</a></p>
+                        </div>
+
+                        <div class="main-content-banner">
+                            <div class="main-content-banner__image main-content-banner__image_women">
+                                <div class="main-content-banner__content">
+                                    <div class="main-content-banner__left-side">
+                                        <div class="main-content-banner__title">
+                                            <span class="text-red">Мужские</span><br>
+                                            <span class="text-white">New Balance</span>
+                                        </div>
+                                        <p class="main-content-banner__descr">Сегодня купить кроссовки NEW BALANCE можно
+                                            по невысокой цене довольно легко. Если изначально обувь производилась в
+                                            качестве ортопедической, то после бума 70-х компания NEW BALANCE
+                                            изготавливает кеды только для спортсменов, особенно бегунов</p>
+                                    </div>
+                                    <div class="main-content-banner__right-side">
+                                        <p><a class="button button_red" href="#">Перейти в каталог</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-content-products-list">
+                            <div class="main-content-products-list__grid">
+                                <div class="products-list-item">
+                                    <div class="products-list-item__discount">-67%</div>
+                                    <div class="products-list-item__image-wrapper">
+                                        <img class="products-list-item__image" src="img/newbalances/sneaker-4.png"
+                                             alt="">
+                                    </div>
+                                    <p class="products-list-item__button text-center products-list-item__button_is-invisible">
+                                        <a class="button button_red button__product-list" href="#">Купить сейчас</a></p>
+                                    <div class="products-list-item__line"></div>
+                                    <div class="products-list-item__sizes products-list-item__sizes_is-invisible">
+                                        <span class="products-list-item__size">37</span>
+                                        <span class="products-list-item__size">38</span>
+                                        <span class="products-list-item__size">39</span>
+                                        <span class="products-list-item__size">40</span>
+                                        <span class="products-list-item__size">41</span>
+                                    </div>
+                                    <p class="products-list-item__name">New Balance 574 Brown/White</p>
+                                    <p class="products-list-item__type">Повседневная</p>
+                                    <div class="products-list-item__price">
+                                        <span class="products-list-item__new-price">3 790</span>
+                                        <span class="products-list-item__old-price">7 890 руб.</span>
+                                    </div>
+                                </div>
+                                <div class="products-list-item">
+                                    <div class="products-list-item__discount">-67%</div>
+                                    <div class="products-list-item__image-wrapper">
+                                        <img class="products-list-item__image" src="img/newbalances/sneaker-5.png"
+                                             alt="">
+                                    </div>
+                                    <p class="products-list-item__button text-center products-list-item__button_is-invisible">
+                                        <a class="button button_red button__product-list" href="#">Купить сейчас</a></p>
+                                    <div class="products-list-item__line"></div>
+                                    <div class="products-list-item__sizes products-list-item__sizes_is-invisible">
+                                        <span class="products-list-item__size">37</span>
+                                        <span class="products-list-item__size">38</span>
+                                        <span class="products-list-item__size">39</span>
+                                        <span class="products-list-item__size">40</span>
+                                        <span class="products-list-item__size">41</span>
+                                    </div>
+                                    <p class="products-list-item__name">New Balance 574 Brown/White</p>
+                                    <p class="products-list-item__type">Повседневная</p>
+                                    <div class="products-list-item__price">
+                                        <span class="products-list-item__new-price">3 790</span>
+                                        <span class="products-list-item__old-price">7 890 руб.</span>
+                                    </div>
+                                </div>
+                                <div class="products-list-item">
+                                    <div class="products-list-item__discount">-67%</div>
+                                    <div class="products-list-item__image-wrapper">
+                                        <img class="products-list-item__image" src="img/newbalances/sneaker-6.png"
+                                             alt="">
+                                    </div>
+                                    <p class="products-list-item__button text-center products-list-item__button_is-invisible">
+                                        <a class="button button_red button__product-list" href="#">Купить сейчас</a></p>
+                                    <div class="products-list-item__line"></div>
+                                    <div class="products-list-item__sizes products-list-item__sizes_is-invisible">
+                                        <span class="products-list-item__size">37</span>
+                                        <span class="products-list-item__size">38</span>
+                                        <span class="products-list-item__size">39</span>
+                                        <span class="products-list-item__size">40</span>
+                                        <span class="products-list-item__size">41</span>
+                                    </div>
+                                    <p class="products-list-item__name">New Balance 574 Brown/White</p>
+                                    <p class="products-list-item__type">Повседневная</p>
+                                    <div class="products-list-item__price">
+                                        <span class="products-list-item__new-price">3 790</span>
+                                        <span class="products-list-item__old-price">7 890 руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-center mb70 mob-mb-0"><a href="#" class="button button_white button__go-to-catalog">Перейти
+                                в каталог</a></p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content-address">
+            <div class="container">
+                <div class="main-content-address__flex">
+
+                    <div class="main-content-address__left-side">
+                        <div class="main-content-address-contacts">
+                            <div class="main-content-address-contacts__left-side">
+                                <p class="main-content-address-contacts__title">
+                                    Магазин <br>
+                                    в центре Москвы
+                                </p>
+                                <div class="main-content-address-contacts__address">
                   <span class="main-content-address-contacts__icon-geo">
                     <i class="icon-geo"></i>
                   </span>
-                  <span class="main-content-address-contacts__address-name">
+                                    <span class="main-content-address-contacts__address-name">
                     Столешников <br>
                     переулок, д. 11
                   </span>
-                  <a href="#" class="main-content-address-contacts__in-map">На карте</a>
-                  <span class="main-content-address-contacts__icon-arrow">
+                                    <a href="#" class="main-content-address-contacts__in-map">На карте</a>
+                                    <span class="main-content-address-contacts__icon-arrow">
                     <i class="icon-arrow-right-white"></i>
                   </span>
+                                </div>
+                                <p class="main-content-address-contacts__phone">8 (495) 150-42-02</p>
+                                <p class="main-content-address-contacts__small-text">
+                                    Ближайшее метро: Театральная, Охотный ряд, Пушкинская <br>
+                                    Режим работы магазина: Ежедневно с 10.00 до 21.00
+                                </p>
+                            </div>
+                            <div class="main-content-address-contacts__right-side">
+                                <img src="img/newbalances/main-address-sneaker.png"
+                                     class="main-content-address-contacts__sneaker">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-content-address__right-side"></div>
                 </div>
-                <p class="main-content-address-contacts__phone">8 (495) 150-42-02</p>
-                <p class="main-content-address-contacts__small-text">
-                  Ближайшее метро: Театральная, Охотный ряд, Пушкинская <br>
-                  Режим работы магазина: Ежедневно с 10.00 до 21.00
-                </p>
-              </div>
-              <div class="main-content-address-contacts__right-side">
-                <img src="img/newbalances/main-address-sneaker.png" class="main-content-address-contacts__sneaker">
-              </div>
             </div>
-          </div>
+        </div>
 
-          <div class="main-content-address__right-side"></div>
+        <div class="main-content-about-shop">
+            <div class="container">
+                <div class="main-content-about-shop__item main-content-about-shop-item">
+                    <div class="main-content-about-shop-item__image-wrapper">
+                        <img src="img/newbalances/main-content-about-1.png" class="main-content-about-shop-item__image">
+                    </div>
+                    <div class="main-content-about-shop-item__text">
+                        <p class="main-content-about-shop-item__title">Более 200 моделей всегда в наличии!</p>
+                        <p class="main-content-about-shop-item__descr">Все модели, которые Вы видите на сайте, и даже
+                            больше, есть в наличии. Более того, мы следим, чтобы у каждой модели были все размеры. Так
+                            что будьте уверены, Вы точно найдете нужный размер! Приезжайте, примеряйте, покупайте!</p>
+                    </div>
+                </div>
+                <div class="main-content-about-shop__item main-content-about-shop-item main-content-about-shop-item_inverse">
+                    <div class="main-content-about-shop-item__text main-content-about-shop-item__text_inverse">
+                        <p class="main-content-about-shop-item__title">Самые вежливые и внимательные продавцы</p>
+                        <p class="main-content-about-shop-item__descr">Наши клиенты выбирают кроссовки с чувством, с
+                            толком, с расстановкой. Модели точно садятся по их ноге и соответствуют их образу жизни. А
+                            все потому, что наши консультанты имеют черный пояс по подбору кроссовок New Balance и
+                            готовы прийти на помощь. Да и в целом, они улыбчивые и приятные люди, с которыми легко найти
+                            общий язык.</p>
+                    </div>
+                    <div class="main-content-about-shop-item__image-wrapper main-content-about-shop-item__image-wrapper_inverse">
+                        <img src="img/newbalances/main-content-about-2.png" class="main-content-about-shop-item__image">
+                    </div>
+                </div>
+                <div class="main-content-about-shop__item main-content-about-shop-item">
+                    <div class="main-content-about-shop-item__image-wrapper">
+                        <img src="img/newbalances/main-content-about-3.png" class="main-content-about-shop-item__image">
+                    </div>
+                    <div class="main-content-about-shop-item__text">
+                        <p class="main-content-about-shop-item__title">Ближайшие станции метро: Чеховская, Театральная,
+                            Пушкинская, Кузнецкий Мост, Охотный Ряд</p>
+                        <p class="main-content-about-shop-item__descr">Вы можете заранее забронировать модели и размеры,
+                            которые хотите примерить. И не беспокоиться о том, что кто-то купит их, а Вы зря потратите
+                            время. Мы работаем без перерывов и выходных с 10.00 до 21.00</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <div class="main-content-about-shop">
-      <div class="container">
-        <div class="main-content-about-shop__item main-content-about-shop-item">
-          <div class="main-content-about-shop-item__image-wrapper">
-            <img src="img/newbalances/main-content-about-1.png" class="main-content-about-shop-item__image">
-          </div>
-          <div class="main-content-about-shop-item__text">
-            <p class="main-content-about-shop-item__title">Более 200 моделей всегда в наличии!</p>
-            <p class="main-content-about-shop-item__descr">Все модели, которые Вы видите на сайте, и даже больше, есть в наличии. Более того, мы следим, чтобы у каждой модели были все размеры. Так что будьте уверены, Вы точно найдете нужный размер! Приезжайте, примеряйте, покупайте!</p>
-          </div>
+        <div class="main-content-line">
+            <div class="container">
+                <div class="main-content-line__flex">
+                    <div class="main-content-line__logo-wrapper">
+                        <img src="img/newbalances/new-balance-logo.png" alt="">
+                    </div>
+                    <p class="main-content-line__text">Гарантия низкой цены и качества: работаем напрямую с
+                        производителем</p>
+                </div>
+            </div>
         </div>
-        <div class="main-content-about-shop__item main-content-about-shop-item main-content-about-shop-item_inverse">
-          <div class="main-content-about-shop-item__text main-content-about-shop-item__text_inverse">
-            <p class="main-content-about-shop-item__title">Самые вежливые и внимательные продавцы</p>
-            <p class="main-content-about-shop-item__descr">Наши клиенты выбирают кроссовки с чувством, с толком, с расстановкой. Модели точно садятся по их ноге и соответствуют их образу жизни. А все потому, что наши консультанты имеют черный пояс по подбору кроссовок New Balance и готовы прийти на помощь. Да и в целом, они улыбчивые и приятные люди, с которыми легко найти общий язык.</p>
-          </div>
-          <div class="main-content-about-shop-item__image-wrapper main-content-about-shop-item__image-wrapper_inverse">
-            <img src="img/newbalances/main-content-about-2.png" class="main-content-about-shop-item__image">
-          </div>
-        </div>
-        <div class="main-content-about-shop__item main-content-about-shop-item">
-          <div class="main-content-about-shop-item__image-wrapper">
-            <img src="img/newbalances/main-content-about-3.png" class="main-content-about-shop-item__image">
-          </div>
-          <div class="main-content-about-shop-item__text">
-            <p class="main-content-about-shop-item__title">Ближайшие станции метро: Чеховская, Театральная, Пушкинская, Кузнецкий Мост, Охотный Ряд</p>
-            <p class="main-content-about-shop-item__descr">Вы можете заранее забронировать модели и размеры, которые хотите примерить. И не беспокоиться о том, что кто-то купит их, а Вы зря потратите время. Мы работаем без перерывов и выходных с 10.00 до 21.00</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="main-content-line">
-      <div class="container">
-        <div class="main-content-line__flex">
-          <div class="main-content-line__logo-wrapper">
-            <img src="img/newbalances/new-balance-logo.png" alt="">
-          </div>
-          <p class="main-content-line__text">Гарантия низкой цены и качества: работаем напрямую с производителем</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="questions-form">
-      <div class="container">
-        <div class="questions-form__flex">
-          <div class="questions-form__title">Остались вопросы?</div>
-          <div class="questions-form__descr">Оставьте свой номер и мы перезвоним ровно через 37 секунд, ответим на все вопросы и поможем подобрать вам обувь</div>
-          <form action="#" class="questions-form__form">
-            <label class="questions-form__input-label">
-              <p class="questions-form__input-text">Введите номер телефона</p>
-              <span class="input-wrapper"><input class="questions-form__input" type="text" placeholder="+7"></span>
-            </label>
-            <button class="questions-form__button button button_red" type="submit">Подписаться</button>
-          </form>
+        <div class="questions-form">
+            <div class="container">
+                <div class="questions-form__flex">
+                    <div class="questions-form__title">Остались вопросы?</div>
+                    <div class="questions-form__descr">Оставьте свой номер и мы перезвоним ровно через 37 секунд,
+                        ответим на все вопросы и поможем подобрать вам обувь
+                    </div>
+                    <form action="#" class="questions-form__form">
+                        <label class="questions-form__input-label">
+                            <p class="questions-form__input-text">Введите номер телефона</p>
+                            <span class="input-wrapper"><input class="questions-form__input" type="text"
+                                                               placeholder="+7"></span>
+                        </label>
+                        <button class="questions-form__button button button_red" type="submit">Подписаться</button>
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-  </section>
-<!--end middle-->
+    </section>
+    <!--end middle-->
 
-<!--start footer-->
-  <footer class="footer footer_dark">
-    <div class="container">
-      <div class="footer__flex mb30">
-        <div class="footer__logo">
-          <img src="img/newbalances/footer-logo.jpg" alt="">
-        </div>
-        <div class="footer__flex-item footer-flex-item">
-          <div class="footer-flex-item__title">Контакты</div>
-          <ul class="footer-flex-item__list footer-flex-item-list">
-            <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">Доставка и оплата</a></li>
-            <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">Возврат</a></li>
-            <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">Контакты</a></li>
-          </ul>
-        </div>
-        <div class="footer__flex-item footer-flex-item">
-          <div class="footer-flex-item__title">Каталог</div>
-          <ul class="footer-flex-item__list footer-flex-item-list">
-            <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">New Balance 574</a></li>
-            <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">New Balance 996</a></li>
-            <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">New Balance 999</a></li>
-            <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">New Balance 288</a></li>
-            <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">New Balance 574</a></li>
-            <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">New Balance 996</a></li>
-            <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">New Balance 999</a></li>
-            <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">New Balance 1400</a></li>
-          </ul>
-        </div>
-        <div class="footer__flex-item footer-flex-item">
-          <div class="footer-flex-item__title">Цвет</div>
-          <ul class="footer-flex-item__list footer-flex-item-list">
-            <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">Темно-синий</a></li>
-            <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">Черный</a></li>
-            <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">Синий</a></li>
-            <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">Зеленый</a></li>
-            <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">Красный</a></li>
-            <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">Розовый</a></li>
-            <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">Белый</a></li>
-          </ul>
-        </div>
-        <div class="footer__flex-contacts footer-contacts">
-          <div class="footer-contacts__phone">
-            <div class="footer-contacts__phone-number">8 (495) 150-42-02</div>
-            <div class="footer-contacts__request-call">
+    <!--start footer-->
+    <footer class="footer footer_dark">
+        <div class="container">
+            <div class="footer__flex mb30">
+                <div class="footer__logo">
+                    <img src="img/newbalances/footer-logo.jpg" alt="">
+                </div>
+                <div class="footer__flex-item footer-flex-item">
+                    <div class="footer-flex-item__title">Контакты</div>
+                    <ul class="footer-flex-item__list footer-flex-item-list">
+                        <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">Доставка
+                            и оплата</a></li>
+                        <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">Возврат</a>
+                        </li>
+                        <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__flex-item footer-flex-item">
+                    <div class="footer-flex-item__title">Каталог</div>
+                    <ul class="footer-flex-item__list footer-flex-item-list">
+                        <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">New
+                            Balance 574</a></li>
+                        <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">New
+                            Balance 996</a></li>
+                        <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">New
+                            Balance 999</a></li>
+                        <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">New
+                            Balance 288</a></li>
+                        <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">New
+                            Balance 574</a></li>
+                        <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">New
+                            Balance 996</a></li>
+                        <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">New
+                            Balance 999</a></li>
+                        <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">New
+                            Balance 1400</a></li>
+                    </ul>
+                </div>
+                <div class="footer__flex-item footer-flex-item">
+                    <div class="footer-flex-item__title">Цвет</div>
+                    <ul class="footer-flex-item__list footer-flex-item-list">
+                        <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">Темно-синий</a>
+                        </li>
+                        <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">Черный</a>
+                        </li>
+                        <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">Синий</a>
+                        </li>
+                        <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">Зеленый</a>
+                        </li>
+                        <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">Красный</a>
+                        </li>
+                        <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">Розовый</a>
+                        </li>
+                        <li class="footer-flex-item-list__item"><a class="footer-flex-item-list__item-link" href="#">Белый</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__flex-contacts footer-contacts">
+                    <div class="footer-contacts__phone">
+                        <div class="footer-contacts__phone-number">8 (495) 150-42-02</div>
+                        <div class="footer-contacts__request-call">
               <span class="footer-contacts__request-call-icon">
                 <i class="icon-footer-request-call"></i>
               </span>
-              <span class="footer-contacts__request-call-text">Заказать звонок</span>
+                            <span class="footer-contacts__request-call-text">Заказать звонок</span>
+                        </div>
+                    </div>
+                    <div class="footer-contacts__schedule">Ежедневно 10:00 - 21:00</div>
+                    <div class="footer-contacts__form-title">
+                        Подпишитесь <br>
+                        на нашу рассылку
+                    </div>
+                    <div class="footer-contacts-form">
+                        <span class="input-wrapper"><input type="text" class="footer-contacts-form__input"
+                                                           placeholder="+7"></span>
+                        <button class="footer-contacts-form__button button button_red">Подписаться</button>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="footer-contacts__schedule">Ежедневно 10:00 - 21:00</div>
-          <div class="footer-contacts__form-title">
-            Подпишитесь <br>
-            на нашу рассылку
-          </div>
-          <div class="footer-contacts-form">
-            <span class="input-wrapper"><input type="text" class="footer-contacts-form__input" placeholder="+7"></span>
-            <button class="footer-contacts-form__button button button_red">Подписаться</button>
-          </div>
+            <div class="footer__flex footer__flex-bottom">
+                <span class="footer__flex-copyright">© 2009-2016 Все права защищены</span>
+                <span><a href="#" class="footer__flex-developed" target="_blank">Разработка сайта —</a></span>
+            </div>
         </div>
-      </div>
-      <div class="footer__flex footer__flex-bottom">
-        <span class="footer__flex-copyright">© 2009-2016 Все права защищены</span>
-        <span><a href="#" class="footer__flex-developed" target="_blank">Разработка сайта —</a></span>
-      </div>
-    </div>
-  </footer>
-<!-- end footer -->
+    </footer>
+    <!-- end footer -->
 
 
-<script src="js/jquery.min.js"></script>
-<script src="js/libsmin/owl.carousel.min.js"></script>
-<script src="js/libsmin/magnific-popup.min.js"></script>
-<script src="js/libsmin/jcf.min.js"></script>
-<script src="js/main.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/libsmin/owl.carousel.min.js"></script>
+    <script src="js/libsmin/magnific-popup.min.js"></script>
+    <script src="js/libsmin/jcf.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
 
 </body>
 </html>

@@ -81,6 +81,10 @@
 
 @media only screen and (max-width: 767px) {
 
+  .mob-mb-0 {
+    margin-bottom: 0;
+  }
+
   .mob-mb-30 {
     margin-bottom: 30px;
   }

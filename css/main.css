@@ -1097,10 +1097,10 @@ body > .jcf-select-drop.jcf-drop-flipped {
 }
 
 .icon-location {
-  background-image: url(../img/sprite.png);
-  background-position: -137px -120px;
+  background-image: url(../img/newbalances/icon-location.png);
   width: 9px;
   height: 13px;
+  background-size: 9px 13px;
 }
 
 .icon-modal-close {
