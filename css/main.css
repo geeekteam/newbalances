@@ -373,7 +373,7 @@ b {
     border-radius: 27px;
     text-transform: uppercase;
     color: #fff;
-    background-color: #8fca1a;
+    background-color: #e21836;
 }
 
 .btn:hover {
@@ -1484,7 +1484,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
         height: 35px;
         padding: 0 15px;
         width: 100%;
-        background-color: #8fca1a;
+        background-color: #e21836;
         transform: skew(-17deg);
     }
 
@@ -1629,7 +1629,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
     position: relative;
     background-color: #fff;
     padding: 20px 0;
-    border-bottom: 2px solid #8fca1a;
+    border-bottom: 2px solid #e21836;
     margin-bottom: 20px;
 }*/
 
@@ -1700,7 +1700,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
     height: 22px;
     color: #fff;
     border-radius: 50%;
-    background-color: #8fca1a;
+    background-color: #e21836;
     line-height: 22px;
     text-align: center;
     font-family: "Roboto", Arial, sans-serif;
@@ -1835,7 +1835,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
 }
 
 .param-nav li.open .param-nav-item-tt {
-    background-color: #8fca1a;
+    background-color: #e21836;
     color: #fff;
 }
 
@@ -1872,7 +1872,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
 }
 
 .param-nav-item-tt:hover {
-    background-color: #8fca1a;
+    background-color: #e21836;
     color: #fff;
 }
 
@@ -2425,15 +2425,13 @@ body > .jcf-select-drop.jcf-drop-flipped {
     min-width: 67px;
     width: 67px;
     height: 30px;
-    border: none;
-    background-color: #8fca1a;
 }
 
 .prod-cart-select-wrapp .jcf-select .jcf-select-text {
     padding: 0 24px 0 0;
     text-align: center;
     line-height: 30px;
-    color: #fff;
+    color: #000;
 }
 
 .prod-cart-select-wrapp .jcf-select .jcf-select-opener {
@@ -2550,7 +2548,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
     display: block;
     margin-bottom: 12px;
     font-family: "FuturaNewCondBold", Arial, sans-serif;
-    color: #8fca1a;
+    color: #e21836;
     font-size: 18px;
     line-height: 22px;
 }
@@ -2558,7 +2556,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
 .card-param-check {
     display: block;
     margin-bottom: 12px;
-    color: #ff4d2b;
+    color: #111111;
     font-family: "FuturaNewDemi", Arial, sans-serif;
     font-size: 16px;
     line-height: 20px;
@@ -2673,9 +2671,9 @@ body > .jcf-select-drop.jcf-drop-flipped {
 }
 
 .card-param-size-item .jcf-radio.jcf-checked + label {
-    background-color: #8fca1a;
+    background-color: #c2a062;
     color: #fff;
-    border-color: #8fca1a;
+    border-color: #c2a062;
 }
 
 .card-param-size-check {
@@ -2784,7 +2782,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
     top: 0;
     height: 130px;
     width: 100%;
-    background-image: linear-gradient(to top, #ffffff 0%, #a5d548 100%);
+    background-image: linear-gradient(to top, #ffffff 0%, #dfceae 100%);
     z-index: 1;
     opacity: 0.6;
 }
@@ -3374,7 +3372,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
         font-family: "FuturaNewHeavy", Arial, sans-serif;
         font-size: 22px;
         line-height: 22px;
-        color: #8fca1a;
+        color: #e21836;
     }
 
     .banner-one-tt {
@@ -3449,7 +3447,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
     }
 
     .banner-two-discount .banner-two-tt-skew {
-        background-color: #8fca1a;
+        background-color: #e21836;
     }
 
     .banner-two-info {
@@ -4839,7 +4837,7 @@ img.mfp-img {
 }
 
 .owl-dots > div.active {
-    background-color: #8fca1a;
+    background-color: #e21836;
 }
 
 .fact-carousel {
@@ -4974,13 +4972,13 @@ button.mfp-close:active {
 }
 
 .owl-thumbs .owl-item.current > div {
-    border-top: 1px solid #8fca1a;
-    border-bottom: 1px solid #8fca1a;
+    border-top: 1px solid #a5d548;
+    border-bottom: 1px solid #a5d548;
 }
 
 .owl-thumbs .owl-item.current > div:before, .owl-thumbs .owl-item.current > div:after {
     display: block;
-    background-color: #8fca1a;
+    background-color: #a5d548;
 }
 
 .owl-thumbs .owl-item img {
